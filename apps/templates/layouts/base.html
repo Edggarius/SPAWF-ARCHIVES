@@ -1,10 +1,8 @@
 {% load static  %}
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     {% block stylesheet %}
-    <link rel="stylesheet" href={%static 'css/styleHome.css'%}>
     {% endblock stylesheet %}
    
     <meta charset="UTF-8">
@@ -14,10 +12,14 @@
     <title>{% block title %}PANTALLA PRINCIPAL SPAW{% endblock title%}</title>
 </head>
 <body>
-{% block content %}
-{% endblock content %}
-<footer>
+    <header>
+    {% include 'includes/nav.html' %}
+    </header>
+    <main>
+    {% block content %}
+
+    {% endblock content %}
+    </main>
     {% include 'includes/footer.html' %}
-</footer>
 </body>
 </html>

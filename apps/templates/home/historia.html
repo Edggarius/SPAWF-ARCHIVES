@@ -1,0 +1,44 @@
+{% extends 'layouts/base.html' %}
+{% load static %}
+{% block stylesheet %}
+<link rel="stylesheet" href={%static 'css/style.css'%}> {% comment "" %}Se agrega el estilo principal style.css y el propio de la pagina "historia.css"{% endcomment %}
+<link rel="stylesheet" href= {%static 'css/historia.css'%}>
+{% endblock stylesheet %}
+{% block content %}
+    <div class="contenedor">
+       <div class="contenedor__historia">
+            <h1 class="titulo">Historia</h1>
+            <p>El Centro de Capacitación en Electrónica Nikola Tesla (CCENT) surge en febrero de 2012, como un esfuerzo 
+                pionero para poner al alcance de todos los michoacanos la adquisición de capacidades técnicas en las diversas áreas de la electrónica. Así mismo, se constituye para brindar actualización al gremio de técnicos electrónicos. El CCENT establece su nombre en honor al inventor ampliamente reconocido como uno de los más grandes 
+                ingenieros electricistas, cuyo trabajo inicial fue pionero en la ingeniería eléctrica moderna
+                y muchos de sus descubrimientos fueron y siguen siendo de suma importancia para el avance tecnológico.</p>
+       </div>
+       <div class="contenedor__mvv">
+            <div class="contenedor__mision">
+                <h1 class="titulo">Misión</h1>
+                <p>Somos un centro dedicado a la capacitación técnica para el trabajo en diversas áreas de la electrónica. 
+                    Así mismo, brindamos servicios de consultoría y solución de problemas basándonos en la electrónica.</p>
+            </div>
+            <div class="contenedor__vision">
+                <h1 class="titulo">Visión</h1>
+                <p>Consolidarnos como una institución de capacitación, investigación y desarrollo en las diferentes áreas de la electrónica,
+                     para la solución de problemas, con presencia física y virtual regional.</p>
+            </div>
+            <div class="contenedor__valores">
+                <h1 class="titulo">Valores</h1>
+                <p>HONESTIDAD: Entendemos que el trato justo y correcto hacia nuestros clientes es clave para fomentar relaciones duraderas con ellos. </p>
+                    <p>RESPETO: Respetamos y valoramos inmensamente la confianza de nuestros clientes, aún en las situaciones más difíciles.</p> 
+                    <p> ENTREGA: Todos los que hacemos parte de esta empresa nos sentimos orgullosos de pertenecer a ella y desarrollamos nuestras funciones con entrega total.</p>
+                    
+            </div>
+            <div class="contenedor__logo">
+                <div class="contenedor__img"><img src={% static 'img/logo_img.png' %} alt=""></div>
+                
+            </div>
+       </div>
+    </div>
+{% endblock content %}
+
+
+      
+        

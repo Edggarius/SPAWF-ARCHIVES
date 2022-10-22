@@ -1,0 +1,60 @@
+.contenedor{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    column-gap: 2rem;
+    justify-content: center;
+    justify-content: center;
+
+}
+.contenedor__historia{
+    border-radius: 15px;
+    background-color: white;
+    display: flex;
+    height: auto;
+    width: 45rem;
+    padding: 15px;
+    flex-direction: column;
+    justify-content: flex-start;
+    
+}
+
+.contenedor__historia p{
+    text-align: justify;
+    line-height: 133%;
+}
+
+.contenedor__mvv{ 
+    border-radius: 15px;
+    background-color: white;
+    padding: 15px 20px;
+    width: 60%;
+    display: grid;
+    
+    column-gap: 15px;
+    row-gap: 20px;
+    grid-template-columns:  1.5fr 0.1fr 1.5fr;
+    grid-template-rows: auto auto;
+    flex-wrap: wrap;
+    grid-template-areas: 
+    "mision . vision"
+    "valores . logo"; 
+  }
+  
+.contenedor__mision { grid-area: mision; }
+.contenedor__vision { grid-area: vision; }
+.contenedor__valores { grid-area: valores; }
+.contenedor__logo { 
+    grid-area: logo;
+    display: flex;    
+    justify-content: center;
+    align-items: center;
+}
+.contenedor__logo img{ 
+    object-fit: cover;
+     
+}
+.contenedor__img{
+    width: 308px;
+    height: 114px;
+}
