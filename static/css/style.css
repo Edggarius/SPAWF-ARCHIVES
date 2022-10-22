@@ -1,111 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Roboto:wght@300;400;500&display=swap');
+:root{
+  --roboto: 'Roboto', sans-serif;
+  --montserrat: 'Montserrat', sans-serif;
+  --regular: 400;
+  --azul-fondo: #E4F5F5;
+  --azul-nav: #015366;
+  --azul-footer: #033540;
+}
+
 *{
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
-
+html{
+    font-family: var(--roboto); /*La de respaldo /local*/
+    font-weight: var(--regular);
+    font-size: 62.5%; /*El navegador por df son 16 px; Al poner el porcentaje, se queda en 10 pixeles 16*0.625=10px*/ 
+}
+body{
+  display: flex;
+  width: 100%;
+  min-width: 702px;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: var(--azul-fondo);
+}
 
 header{
   width: 100%;
-  margin-bottom: 50px;
-  background: #033540;
+  margin-bottom: 15px;
+  background-color: #015366;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navegacion{
+  display: flex;
+  column-gap: 25px;
   
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
 }
+.logo{
+  padding: 10px 15px;
+  height: 70px;
+  width: 70px;
 
-header .navegacion{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  padding: 20px;
-  justify-content: right;
 }
-
-header .logo{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  padding: 10px;
-  justify-content: left;
+.logo--img{
+  object-fit: cover;
+  height: 100%;
 }
 
 
 .nav-content {
-  padding: 14px 30px;
-  font-size: 22px;
+  width: fit-content;
   display: flex;
-  flex-direction: row;
-  align-items: cnter;
+  align-items: center;
+  justify-content: center;
 }
 
 .inicio, .somos, .cursos, .materiales, .servicios, .contacto{
-
+  padding: 0 5px;
   text-decoration: none;
-  font-family: 'Montserrat', sans-serif;
-  color: #fff;
+  font-size: 2rem;
+  font-family: var(--roboto);
+  color: #E4F5F5;
 
 }
-
-.cpy-content{
-  padding: 14px 30px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
 
 
 /* Estos son los estilos del footer */
-
-
 footer{
-  border-top: 4px solid #319CFF;
+  border-top: 5px solid #319CFF;
   width: 100%;
+  max-width: 100%;
+  min-width: fit-content;
+  padding: 15px 20px;
   margin-top: 50px;
   background: #033540;
-  
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-
-}
-
-footer .sociales{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  padding: 15px;
-  justify-content: right;
-}
-
-footer .copy{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  padding: 15px;
-  justify-content: left;
-}
-
-
-.face-content {
-  padding: 14px 30px;
-  display: flex;
-  flex-direction: row;
-  align-items: cnter;
-}
-
-.cpy-content{
-  padding: 14px 30px;
-  display: flex;
-  flex-direction: row;
   align-items: center;
+  justify-content: space-between;
+  margin-top: auto;
+  box-sizing: border-box;
 }
 
+.sociales{
+  display: flex;
+  column-gap: 24px;   
+}
+.nav-content:nth-child(6){
+  margin-right: 15px;
 
+}
 
+.face-content{
+  width: 30px;
+  height: 30px;
+}
+.face__content--img{
+  width: 100%;
+  height: 100%;
+}
+
+.copy{
+  width: 100%;
+  height: 100%;
+}
+
+.cpy-content a{
+  color: white;
+  text-decoration: none;
+  font-size: 2.2rem;
+  
+
+}
