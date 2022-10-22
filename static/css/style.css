@@ -1,0 +1,111 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+header{
+  width: 100%;
+  margin-bottom: 50px;
+  background: #033540;
+  
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+header .navegacion{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 20px;
+  justify-content: right;
+}
+
+header .logo{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 10px;
+  justify-content: left;
+}
+
+
+.nav-content {
+  padding: 14px 30px;
+  font-size: 22px;
+  display: flex;
+  flex-direction: row;
+  align-items: cnter;
+}
+
+.inicio, .somos, .cursos, .materiales, .servicios, .contacto{
+
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  color: #fff;
+
+}
+
+.cpy-content{
+  padding: 14px 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+
+
+/* Estos son los estilos del footer */
+
+
+footer{
+  border-top: 4px solid #319CFF;
+  width: 100%;
+  margin-top: 50px;
+  background: #033540;
+  
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+}
+
+footer .sociales{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 15px;
+  justify-content: right;
+}
+
+footer .copy{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 15px;
+  justify-content: left;
+}
+
+
+.face-content {
+  padding: 14px 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: cnter;
+}
+
+.cpy-content{
+  padding: 14px 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+
+
