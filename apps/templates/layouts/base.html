@@ -1,0 +1,19 @@
+{% load static  %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% block stylesheet %}
+    <link rel="stylesheet" href={%static 'css/styleHome.css'%}>
+    {% endblock stylesheet %}
+   
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPAW</title>
+    <title>{% block title %}PANTALLA PRINCIPAL SPAW{% endblock title%}</title>
+</head>
+<body>
+{% block content %}{% endblock content %}
+</body>
+</html>
