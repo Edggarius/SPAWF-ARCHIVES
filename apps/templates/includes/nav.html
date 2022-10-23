@@ -3,11 +3,11 @@
         <a href="#"> <img src="{%static 'img/logo.svg'%}" class="logo--img" alt=""></a>
     </div>
     <div class="navegacion">
-      <div class="nav-content">
-        <a class="inicio" href="#" target="_blank">Inicio </a>
+      <div class="nav-content"> 
+        <a class="inicio" href={% url 'home' %} target="_self">Inicio </a>
       </div>
       <div class="nav-content">
-        <a class="somos" href="" target="_blank">Historia</a>
+        <a class="somos" href={% url 'historia' %} target="_self">Historia</a>
       </div>
       <div class="nav-content">
         <a class="cursos" href="#" target="_blank">Cursos</a>
@@ -16,7 +16,7 @@
         <a class="materiales" href="#" target="_blank">Materiales</a>
       </div>
       <div class="nav-content">
-        <a class="servicios" href="#" target="_blank">Servicios</a>
+        <a class="servicios" href={% url 'servicios' %} target="_self">Servicios</a>
       </div>
       <div class="nav-content">
         <a class="contacto" href="#" target="_blank">Contacto</a>

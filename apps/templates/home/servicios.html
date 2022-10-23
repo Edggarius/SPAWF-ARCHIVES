@@ -1,0 +1,53 @@
+{% extends 'layouts/base.html' %}
+{% load static %}
+{% block stylesheet %}
+<link rel="stylesheet" href={%static 'css/style.css'%}> {% comment "" %}Se agrega el estilo principal style.css y el propio de la pagina "historia.css"{% endcomment %}
+<link rel="stylesheet" href= {%static 'css/servicios.css'%}>
+{% endblock stylesheet %}
+{% block content %}
+    <div class="contenedor">
+        <div class="contenedor__servicios">
+            <h1 class="titulo">Conoce Nuestros Servicios</h1>
+            <ul>
+              <li>Diagnostico</li>
+              <li>Reparación</li>
+              <li>Mantenimiento Preventivo</li>
+              <li>Asesoria en Proyectos</li>
+              <li>Entre otros...</li>           
+            </ul>
+            <div class="contenedor__servicios-img">
+                <img class="servicios-img" src={% static 'img/servicios.png' %} alt="">
+            </div>
+        </div>
+        <div class="contenedor__contactanos">
+                <h1 class="titulo">Contactanos</h1>
+                <div class="contactanos__redes"> <!--Display bloxc-->
+                    <div class="contactanos__contacto"><!--Display Grid-->
+                        <div class="contenedor__contacto-img">
+                            <img class="contacto-img" src={% static 'img/whats-azul.png' %} alt="">
+                        </div>
+                        <p class="contacto__parrafo">+52 4431722172</p>
+                    </div>
+                    <div class="contactanos__contacto"><!--Display Grid-->
+                        <div class="contenedor__contacto-img">
+                            <img class="contacto-img" src={% static 'img/face-azul.png' %} alt="">
+                        </div>
+                        <p class="contacto__parrafo">ccent.escuelaelectronica</p>
+                    </div>
+                    <div class="contactanos__contacto"><!--Display Grid-->
+                        <div class="contenedor__contacto-img">
+                            <img class="contacto-img" src={% static 'img/gmail-azul.png' %} alt="">
+                        </div>
+                        <p class="contacto__parrafo">ccent_2012@hotmail.com</p>
+                    </div>
+                    <div class="contactanos__contacto"><!--Display Grid-->
+                        <div class="contenedor__contacto-img">
+                            <img class="contacto-img" src={% static 'img/maps-azul.png' %} alt="">
+                        </div>
+                        <p class="contacto__parrafo">Calle Ingeniero Juan Guillermo Villasana 131.
+                            58140 Morelia, México</p>
+                    </div>
+                </div>
+        </div>
+    </div>
+{% endblock content %}

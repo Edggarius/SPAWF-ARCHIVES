@@ -5,3 +5,6 @@ def home(request):
 
 def historia(request):
     return render(request, 'home/historia.html',{})
+
+def servicios(request):
+    return render(request, 'home/servicios.html',{})
