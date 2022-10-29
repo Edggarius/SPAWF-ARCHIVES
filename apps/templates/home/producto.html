@@ -1,0 +1,18 @@
+{% extends 'layouts/base.html' %}
+{% load static %}
+{% block stylesheet %}
+<link rel="stylesheet" href={%static 'css/style.css'%}>
+<link rel="stylesheet" href= {%static 'css/producto.css'%}>
+{% endblock stylesheet %}
+{% block content %}
+
+<div class="card" style="width: 18rem;">
+    <img class="contenedor_img" src={% static 'img/servo.jpg' %} alt="">
+    <div class="card-body">
+      <h5 class="card-title"><strong>Servomotor</strong> <br> SG90 RC 9g</h5><br><br>
+      <p class="card-text">49 MXM</p>
+    </div>
+</div>
+
+
+{% endblock content %}
