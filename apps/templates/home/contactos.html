@@ -1,0 +1,34 @@
+{% extends 'layouts/base.html' %}
+{% load static %}
+{% block stylesheet %}
+<link rel="stylesheet" href={%static 'css/style.css'%}> {% comment "" %}Se agrega el estilo principal style.css y el propio de la pagina "historia.css"{% endcomment %}
+<link rel="stylesheet" href= {%static 'css/historia.css'%}>
+<link rel="stylesheet" href={%static 'css/contactos.css'%}
+{% endblock stylesheet %}
+
+{% block content %}
+
+<div class="contenedor">
+    <div class="contenedor__servicios">
+        <h1 class="titulo">Contactanos en:</h1>
+        <ul>
+          <li>+52 4431722172 </li>
+          <img class="contacto-img" src={% static 'img/whats-azul.png' %} alt="">
+          <li>ccent.escuelaelectronica</li>
+          <img class="contacto-img" src={% static 'img/face-azul.png' %} alt="">
+          <li>ccent.2012@hotmail.com</li> 
+          <img class="contacto-img" src={% static 'img/gmail-azul.png' %} alt="">         
+        </ul>
+        <div class="contenedor__servicios-img">
+            
+            <p>Si deseas consultar mayor informacion sobre nuestros cursos o servicios brindados,<br>
+            no dudes en mandarnos un mensaje a nuestro Whatsapp, Correo y Facebook.</p>
+        </div>
+    </div>
+
+    <div class="contenedor__contactanos"> 
+            <h1 class="titulo">Visitanos en: </h1>
+            <div class="contenedor_i"><img src={% static 'img/loca.png' %} alt="Imagen de un estudiante"></div>
+            </div>
+
+{% endblock content %}
