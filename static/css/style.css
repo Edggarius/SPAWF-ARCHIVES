@@ -169,3 +169,10 @@ footer{
 .nav-content a:hover:after{
   width: 100%;
 }
+
+.carrusel__img{
+  vertical-align: middle;
+  width: 100%;
+  height: 50rem;
+  object-fit: cover;
+}

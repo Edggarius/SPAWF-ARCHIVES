@@ -1,0 +1,27 @@
+.contenedor_home{
+
+font-size: 15px;
+}
+
+.contenedor_lista{
+font-size: 15px;
+}
+
+.contenedor_i{
+max-width: 400px;
+max-height: 400px;
+}
+
+.carrusel{
+   width: 1350px;
+   height: 448px;
+   
+   background: url(image.png);
+   box-shadow: inset 150px 4px 100px rgba(0, 0, 0, 0.5), inset -150px 4px 100px rgba(0, 0, 0, 0.5);
+   
+   /* Inside auto layout */
+   
+   flex: none;
+   order: 0;
+   flex-grow: 0;
+}
