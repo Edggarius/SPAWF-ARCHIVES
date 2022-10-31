@@ -73,16 +73,16 @@ box-shadow: 9px 11px 18px -8px rgba(117,117,117,0.96);
   margin: 2rem 10rem 2rem 5rem;
 }
 
+.curso-img{
+  width: 25rem;
+  height: 25rem;
+}
+
 .contenedor_imgMod1{
   display: inline;
   width: 25rem;
   height: 25rem;
   margin: 0 0 1.5rem 4rem;
-}
-
-.curso-img{
-  width: 25rem;
-  height: 25rem;
 }
 
 ul{
@@ -122,14 +122,12 @@ ul{
 
 .contenedor_imgMod2{
   display: inline;
-  
   width: 25rem;
   height: 25rem;
   margin: 2rem 10rem 2rem 4rem;
 }
 
 .curso-img2{
-  border-radius: 10px;
   width: 25rem;
   height: 25rem;
 }
@@ -137,8 +135,7 @@ ul{
 .contenedor_descMod2{
   display: inline;
   width: 60rem;
-    margin: 0 0 1.5rem 4rem;
-
+  margin: 0 0 1.5rem 4rem;
 }
 
 .desc_mod2{

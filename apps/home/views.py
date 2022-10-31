@@ -14,3 +14,15 @@ def cursos(request):
 
 def curso(request):
     return render(request, 'home/curso.html',{})
+
+def curso2(request):
+    return render(request, 'home/curso2.html',{})
+
+def curso3(request):
+    return render(request, 'home/curso3.html',{})
+
+def curso4(request):
+    return render(request, 'home/curso4.html',{})
+
+def curso5(request):
+    return render(request, 'home/curso5.html',{})
