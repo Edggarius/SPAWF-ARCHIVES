@@ -1,0 +1,48 @@
+.titulos-curso{
+  text-align: center;
+  font-size: 3.5rem;
+}
+
+.contenedor-cursos{
+  width: 100%;
+  height: auto;
+  justify-content: center;
+  display: flex;
+  flex-flow: row wrap;
+  margin: 2rem 0 3rem 0;
+}
+
+.contenedor-card-curso{
+  background: #F6F6F6;
+  border-radius: 10px;
+  width: 25rem; 
+  height: auto;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin: 1.5rem 4rem 1.5rem 4rem;
+
+  -webkit-box-shadow: 9px 11px 18px -8px rgba(117,117,117,0.96);
+  -moz-box-shadow: 9px 11px 18px -8px rgba(117,117,117,0.96);
+  box-shadow: 9px 11px 18px -8px rgba(117,117,117,0.96);
+}
+
+.contenedor-card-curso:hover{
+  transform: translateY(-7px);
+}
+
+.img-cursos{
+  width: 25rem;
+  height: 18rem;
+  border-radius: 1rem 1rem 0 0;
+}
+
+.titulo_curso{
+  font-size: 1.2rem;
+  text-align: center;
+  padding: .5rem;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  background-color: red;
+}

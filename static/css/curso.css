@@ -1,0 +1,251 @@
+/* estilos del titulo y pequeña descripcion */
+.cont_desc{
+  background: #fff;
+  border-radius: 10px;
+  width: 100%;
+  height: auto;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 0 3rem 0;
+
+  -webkit-box-shadow: 9px 11px 18px -8px rgba(117,117,117,0.96);
+-moz-box-shadow: 9px 11px 18px -8px rgba(117,117,117,0.96);
+box-shadow: 9px 11px 18px -8px rgba(117,117,117,0.96);
+}
+
+.contendor_titulo{
+  margin: 1rem;
+  width: 60rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.title{
+  border-radius: 10px;
+  padding: .6rem; 
+  background: #015366;
+  color: #fff;
+  letter-spacing: 0.2rem;
+}
+
+.contenedor_descripcion{
+  margin: 2rem;
+  width: 80rem;
+  
+}
+
+.descripcion{
+  text-align: center;
+
+}
+
+/* estilos del primer modulo */
+.cont_mod1{
+  background: #fff;
+  border-radius: 10px;
+  width: 100%;
+  height: auto;
+  justify-content: center;
+  flex-flow: row wrap;
+  display: flex;
+  flex-direction: row;
+  margin: 2rem 0 3rem 0;
+
+  -webkit-box-shadow: 9px 11px 18px -8px rgba(117,117,117,0.96);
+-moz-box-shadow: 9px 11px 18px -8px rgba(117,117,117,0.96);
+box-shadow: 9px 11px 18px -8px rgba(117,117,117,0.96);
+
+}
+
+.contenedor_tMod1{
+  display: block;
+  margin: 2rem;
+  width: 60rem;
+  text-align: center;
+  text-transform: uppercase;
+
+}
+
+.contenedor_descMod1{
+  display: inline;
+  width: 60rem;
+  margin: 2rem 10rem 2rem 5rem;
+}
+
+.curso-img{
+  width: 25rem;
+  height: 25rem;
+}
+
+.contenedor_imgMod1{
+  display: inline;
+  width: 25rem;
+  height: 25rem;
+  margin: 0 0 1.5rem 4rem;
+}
+
+ul{
+  margin-top: 1rem;
+  margin-left: 3rem;
+  font-size: 1.6rem;
+}
+
+
+/* Stylos del modulo 2 */
+
+.cont_mod2{
+  background: #fff;
+  border-radius: 10px;
+  width: 100%;
+  height: auto;
+  justify-content: center;
+  flex-flow: row wrap;
+  display: flex;
+  flex-direction: row;
+  margin: 2rem 0 3rem 0;
+
+  -webkit-box-shadow: 9px 11px 18px -8px rgba(117,117,117,0.96);
+  -moz-box-shadow: 9px 11px 18px -8px rgba(117,117,117,0.96);
+  box-shadow: 9px 11px 18px -8px rgba(117,117,117,0.96);
+
+}
+
+.contenedor_tMod2{
+  display: block;
+  margin: 2rem 30rem;
+  width: 60rem;
+  text-align: center;
+  text-transform: uppercase;
+
+}
+
+.contenedor_imgMod2{
+  display: inline;
+  width: 25rem;
+  height: 25rem;
+  margin: 2rem 10rem 2rem 4rem;
+}
+
+.curso-img2{
+  width: 25rem;
+  height: 25rem;
+}
+
+.contenedor_descMod2{
+  display: inline;
+  width: 60rem;
+  margin: 0 0 1.5rem 4rem;
+}
+
+.desc_mod2{
+  margin-top: 1rem;
+}
+
+/* estilos de las info horario, curso */
+
+.cont_info{
+  width: 100%;
+  height: auto;
+  justify-content: center;
+  display: flex;
+  flex-flow: row wrap;
+  margin: 2rem 0 3rem 0;
+}
+
+.contenedor_inicio-cursos, .contenedro_horario, .contenedor_inscripcion{
+ 
+  background: #fff;
+  border-radius: 10px;
+  width: 41.5rem;
+  height: auto;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 1rem 1rem 1rem;
+
+  -webkit-box-shadow: 9px 11px 18px -8px rgba(117,117,117,0.96);
+  -moz-box-shadow: 9px 11px 18px -8px rgba(117,117,117,0.96);
+  box-shadow: 9px 11px 18px -8px rgba(117,117,117,0.96);
+
+}
+
+.titulo_curso, .titulo_horario , .titulo_inscripcion{
+  text-align: center;
+  
+  border-radius: 1rem;
+  margin: 1rem;
+  width: 40.5rem;
+  height: auto;
+  padding: .5rem;
+  background: #015366;
+  color: #fff;
+  letter-spacing: 0.2rem;
+
+  font-weight: lighter;
+}
+
+.inf_inicio p{
+  text-align: center;
+  font-size: 2rem;
+  margin: 1.5rem 0 1.5rem 0;
+}
+
+.inf_horario p{
+  text-align: center;
+  font-size: 2rem;
+  margin: 1.5rem 0 3rem 0;
+}
+
+.inf_inscripcion p{
+  text-align: center;
+  font-size: 2rem;
+}
+
+.pago_regular{
+    margin: 1.5rem 0 1.5rem 0;
+}
+
+.pago_regular2{
+    margin: 2rem 0 2rem 0;
+}
+
+.desc_pronto{
+  margin: 0 0 2rem 0;
+
+}
+
+.horario2{
+  padding-top: 3.5rem;
+}
+
+/* estilo de el ultimo banner */
+
+.cont_banner{
+  background: #fff;
+  border-radius: 10px;
+  width: 100%;
+  height: auto;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 0 3rem 0;
+
+  -webkit-box-shadow: 9px 11px 18px -8px rgba(117,117,117,0.96);
+-moz-box-shadow: 9px 11px 18px -8px rgba(117,117,117,0.96);
+box-shadow: 9px 11px 18px -8px rgba(117,117,117,0.96);
+}
+
+.contenedor_banner{
+  margin: 2rem;
+  width: 80rem;
+}
+
+.banner{
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+
+
+
