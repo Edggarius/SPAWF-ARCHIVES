@@ -29,3 +29,6 @@ def curso4(request):
 
 def curso5(request):
     return render(request, 'home/curso5.html',{})
+
+def contactos(request):
+    return render(request, 'home/contactos.html',{})
