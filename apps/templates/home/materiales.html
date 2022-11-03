@@ -6,18 +6,11 @@
 {% endblock stylesheet %}
 {% block content %}
 
-    <h1 class="h1">Catalogo de materiales</h1><br>
+    <h1 class="titulo">Catalogo de materiales</h1><br>
     <div class="contenedor_categoria">
-        <label for="categoria"><strong><h1>Categorias</h1></strong> </label><br>
-        <select  id="categoria">
-            <option label="Todo">Todo</option>
-            <option label="Cables">Cables</option>
-            <option label="Accesorios">Accesorios</option>
-            <option label="Insumos">Insumos</option>
-        </select>
-    </div>
-    <div class="contenedor">
-        <div class="contenedor-productos">
+        
+        <div class="contenedor">
+            <div class="contenedor-productos">
             <nav class="navbar">
                 <div class="container-fluid">
                     <form class="d-flex" role="search">
@@ -27,27 +20,47 @@
                 </div>
             </nav>
         </div>
+        </div>
+        
+
+        <label for="categoria"><strong><h1 class="titulo">Categorias</h1></strong> </label><br>
+        <select  id="categoria">
+            <option label="Todo">Todo</option>
+            <option label="Cables">Cables</option>
+            <option label="Accesorios">Accesorios</option>
+            <option label="Insumos">Insumos</option>
+        </select>
+
+
+        
+        
     </div>
+    
     <br>
     <br>
     <div class="contenedor">
         <div class="contenedor_po">
             <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src={% static 'img/potenciometro.png' %} alt="">
+                <div class="card">
+                    <img class="contenedor_img" src={% static 'img/potenciometro.png' %} alt="">
+                </div>
                 <div class="card-body">
-                  <h5 class="card-title"><strong>Potenciometro</strong> <br> De Precision 3362p 100k / 50k</h5>
+                  <h5 class="card-title"><strong>Potenciometro</strong> <br></h5>
                   <p class="card-text">4 MXM</p>
-                  <a href={% url 'producto' %} class="btn btn-primary">Disponible</a>
+                  <a href={% url 'producto' %} class="btn btn-primary">No Disponible</a>
                 </div>
             </div>
             
-
-            <div class="card" style="width: 18rem;">
-                <img class="contenedor_img" src={% static 'img/servo.jpg' %} alt="">
-                <div class="card-body">
-                  <h5 class="card-title"><strong>Servomotor</strong> <br> SG90 RC 9g</h5><br><br>
-                  <p class="card-text">49 MXM</p>
-                <a href={% url 'producto' %} class="btn btn-primary">Disponible</a>
+            <div class="contenedor_po">
+                <div class="card" style="width: 18rem;">
+                    <div class="card">
+                        <img class="contenedor_img" src={% static 'img/prueba.jpg' %} alt="">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title"><strong>Servomotor</strong> <br></h5>
+                        <p class="card-text">49 MXM</p>
+                        <a href={% url 'producto' %} class="btn btn-primary">Disponible</a>
+                    </div>
                 </div>
             </div>
         </div>

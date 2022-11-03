@@ -3,20 +3,47 @@
     height: 100%;
     display: flex;
     justify-content: center;
+    
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    border-radius: 40%;
+    
 }
 .contenedor_img{
-    width: 17rem;
+    object-fit: cover;
     height: 17rem;
-    
+
 }
 .contenedor_po{
     flex-wrap: wrap;
     border-radius: 50px;
     display: flex;
-    justify-content: end
+    justify-content: end;
+    gap: 2em;
 }
 .contenedor_categoria{
     text-align: justify;
     font-size: 15px;
     font-family: 'Roboto', sans-serif;
+}
+
+.card-body{
+    background-color: white;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+.btn.btn-primary{
+    background-color: green;
+}
+.card-bodyp{
+    background-color: yellow;
+    padding: 1em;
+    display: flex;
+    text-align: center;
+    align-items: center;
 }
