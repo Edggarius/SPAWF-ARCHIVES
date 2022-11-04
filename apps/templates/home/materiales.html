@@ -6,63 +6,31 @@
 {% endblock stylesheet %}
 {% block content %}
 
-    <h1 class="titulo">Catalogo de materiales</h1><br>
-    <div class="contenedor_categoria">
-        
-        <div class="contenedor">
-            <div class="contenedor-productos">
-            <nav class="navbar">
-                <div class="container-fluid">
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Nombre del producto" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Buscar</button>
-                    </form>
-                </div>
-            </nav>
-        </div>
-        </div>
-        
-
-        <label for="categoria"><strong><h1 class="titulo">Categorias</h1></strong> </label><br>
-        <select  id="categoria">
-            <option label="Todo">Todo</option>
-            <option label="Cables">Cables</option>
-            <option label="Accesorios">Accesorios</option>
-            <option label="Insumos">Insumos</option>
-        </select>
-
-
-        
-        
-    </div>
     
-    <br>
-    <br>
-    <div class="contenedor">
-        <div class="contenedor_po">
-            <div class="card" style="width: 18rem;">
-                <div class="card">
-                    <img class="contenedor_img" src={% static 'img/potenciometro.png' %} alt="">
-                </div>
-                <div class="card-body">
-                  <h5 class="card-title"><strong>Potenciometro</strong> <br></h5>
-                  <p class="card-text">4 MXM</p>
-                  <a href={% url 'producto' %} class="btn btn-primary">No Disponible</a>
-                </div>
-            </div>
-            
-            <div class="contenedor_po">
-                <div class="card" style="width: 18rem;">
-                    <div class="card">
-                        <img class="contenedor_img" src={% static 'img/prueba.jpg' %} alt="">
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title"><strong>Servomotor</strong> <br></h5>
-                        <p class="card-text">49 MXM</p>
-                        <a href={% url 'producto' %} class="btn btn-primary">Disponible</a>
-                    </div>
-                </div>
-            </div>
+
+    <div class="container-all">
+      <div class="item-title">
+        <h1 class="titulo">Catalogo de materiales</h1>
+      </div>
+
+      <div class="item-categoria">
+        <select class="select-css">
+          <option>Todos</option>
+          <option>Robótica</option>
+          <option>Herramientas</option>
+          <option>Cables e insumos</option>
+        </select>
+      </div>
+
+      <div class="item-materiales">
+        <div class="barra-navegacion">
+          in
+          
+
+        </div>
+
+        <div class="container-materiales">
+
         </div>
         
       </div>
