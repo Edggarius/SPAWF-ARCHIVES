@@ -3,7 +3,10 @@
 {% block stylesheet %}
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 <link rel="stylesheet" href={%static 'css/style.css'%}> {% comment "" %}Se agrega el estilo principal style.css y el propio de la pagina "historia.css"{% endcomment %}
+<link rel="stylesheet" href={%static 'css/curso.css'%}>
 <link rel="stylesheet" href={%static 'css/home.css'%}>
+
+
 {% endblock stylesheet %}
 {% block content %}
 <div>
@@ -38,27 +41,25 @@
 <div class="textoq">
   <br>
   <br>
-<center> <h1>¿Por qué estudiar con nosotros?</h1>  </center>
+<center> <h1>¿Por qué estudiar con nosotros?</h1>  </center> </div>
 
-<div class="clearfix">
- 
-  <br>
-  <br>
-  <p>
-    <h2><li>Tenemos un sistema de aprendizaje enfocado al campo laboral y a la comunidad estudiantil.</li>  </h2>
+<div class="cont_mod1">
+  <div class="contenedor_descMod1">
+    
+    <p class="desc_mod1">Nos distinguen muchas cosas, pero sobre todo:
   </p>
-  <p>
-   <h2>  <li>Más de 15 años de experiencia laboral nos avalan.</li>  </h2>
-  <p>
-    <h2><li>Prestamo de material  y herramienta.</li>  </h2>
-   </p>
-   <p>
-    <h2><li>Planes semestrales y horarios flexibles.</li>  </h2>
-   </p>
-   <p>
-    <h2><li>No se requiere ningún grado de estudios.</li>  </h2>
-   </p>
-   
+    <ul>
+      <li>Tenemos un sistema de aprendizaje enfocado al campo laboral y a la comunidad estudiantil.</li>
+      <li>Más de 15 años de experiencia laboral nos avalán.</li>
+      <li>Préstamo de material y herramienta.</li>
+      <li>Planes semestrales y horarios flexibles.</li>
+      <li>No se requiere ningún grado de estudios previos.</li>
+    </ul>
+  </div>
+  <div class="contenedor_imgMod1">
+    <img class="curso-img" src={% static 'img/estu.jpg' %} alt="">
+  </div>
+
 </div>
 
 
