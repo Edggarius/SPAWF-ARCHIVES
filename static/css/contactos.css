@@ -1,3 +1,4 @@
+
 .contenedor{
     width: 100%;
     height: 100%;
@@ -77,4 +78,31 @@
 
 .titulo{
     margin-bottom: 35px;
+}
+
+.btn, .modal-body, .modal-title, .form-control{
+    font-size: initial !important;
+}
+
+.form-group{
+    margin-top: 1rem;
+}
+.btn .btn-primary{
+    background-color: #015366;
+}
+.btn-primary {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #015366;
+    --bs-btn-border-color: #005c70;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #005c70;
+    --bs-btn-hover-border-color: #005c70;
+    --bs-btn-focus-shadow-rgb: 49,132,253;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #015366;
+    --bs-btn-active-border-color: #015366;
+    --bs-btn-active-shadow: inset 0 3px 5pxrgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #015366;
+    --bs-btn-disabled-border-color: #015366;
 }

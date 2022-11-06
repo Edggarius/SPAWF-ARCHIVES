@@ -3,20 +3,29 @@
    flex-direction: row;
    width: 100%;
    background-color: white;
-   margin-top: 3rem;
    column-gap: 3p;
    padding: 2rem;
+   margin: 5rem 0;
  }
  .estudiar__porque{
    display: flex;
-   width: 50%;
+   width: 100%;
    flex-direction: column;
+   align-items: center;
+ }
+ .estudiar__porque ul{
+   width: 90%;
+
  }
  .estudiar__img{
-   width: 50%;
+   width: 100%;
    display: flex;
    justify-content: end;
    flex-direction: row;
+ }
+ .estudiar__img img{
+  width: 80%;
+  object-fit: cover;
  }
  
 li{
@@ -29,3 +38,14 @@ li{
 main{
    margin: 0px !important;
 }
+
+.contenedor__estudiar {
+  display: grid; 
+  grid-template-columns: 1fr 1fr; 
+  grid-template-rows: 0.3fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "estudiar__porque estudiar__img"; 
+}
+.estudiar__porque { grid-area: estudiar__porque; }
+.estudiar__img { grid-area: estudiar__img; }
