@@ -6,25 +6,37 @@
 {% endblock stylesheet %}
 {% block content %}
 
-<div class="card_productos" style="">
-  <div class="contenedor_imagproducto">
-      <img class="ima_producto" src={% static 'img/servo.jpg' %} alt="">
-  </div>
-    <div class="info">
-      <h5 class="titulo"><strong>Servomotor</strong> <br></h5>
-      <p>Dispositivo actuador que tiene la capacidad de ubicarse en cualquier posición dentro de su rango de operación, y de mantenerse estable en dicha posición.</p>
-      <div class="li">
-        <ul>
-          <li>Largo del servomotor: 23 mm</li>
-          <li>Altura del servomotor: 32 mm</li>
-          <li>Largo del cable: 23 mm</li>
-          <li>Ancho del servomotor: 12 mm</li>
-          <li>Voltaje mínimo - Voltaje máximo: 5V - 5V</li>
-        </ul>
-      </div>
-      <p class="card-text"><strong>$ 49.00 MXM C/U</strong></p>
+<div class="container-material">
+  <div class="container-grid">
+    <div class="item-title">
+      <h1>LED Grande 10mm difuso</h1>
     </div>
+    <div class="item-img">
+      <img class="img-material" src={% static 'img/leds.jpg' %} alt="">
+    </div>
+    <div class="item-contenido">
+      <div class="parrafo">
+        <p class="p-desc">Led 10mm difuso disponible en diferentes colores desde Rojo, Verde y Amarillo de acuerdo a los requerimientos de tus proyectos o practicas de electrónica podrás elegir el color que más se ajuste a tus necesidades.</p>
+
+        <ul>
+          <li>Ángulo de visión:120°</li>
+          <li>Número de pines: 2</li>
+          <li>Diámetro de encapsulado: 10mm</li>
+          <li>Material de Shell: Epóxico</li>
+        </ul>
+
+        <p class="p-piezas">Piezas disponlibles: 5.</p>
+
+        <p class="p-precio">$ 8.00 MX C/U</p>
+      </div>
+      
+    </div>
+  </div>
 </div>
+
+
+
+
 
 
 {% endblock content %}

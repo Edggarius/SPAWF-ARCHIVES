@@ -1,89 +1,69 @@
-.contenedor{
-    width: 100%;
-    height: 100%;
-    margin: 0 0%;
-    display: flex;
-    
-}
-.container-fluid{
-      width: 80%;
-}
-.contenedor-productos{
-    position: relative;
-    margin: 0 auto;
+.item-title { grid-area: titulo;}
+.item-img { grid-area: img;}
+.item-contenido { grid-area: contenido;}
+
+.container-material{
+  width: auto;
+  height: auto;
+  margin: 1.5rem;
+  padding: 1.5rem;
+  border-radius: 1rem;
+
+  -webkit-box-shadow: 9px 11px 18px -8px rgba(117,117,117,0.96);
+  -moz-box-shadow: 9px 11px 18px -8px rgba(117,117,117,0.96);
+  box-shadow: 9px 11px 18px -8px rgba(117,117,117,0.96);
 }
 
-.card{
-    display: flex;
-    flex-direction: column;
-    border-radius: 40%;
-    
-}
-.contenedor_img{
-    object-fit: cover;
-    height: 17rem;
+.container-grid{
+  display: grid;
 
-}
-.contenedor_po{
-    flex-wrap: wrap;
-    border-radius: 50px;
-    display: flex;
-    justify-content: center;
-    gap: 2em;
-
-}
-.contenedor_categoria{
-    text-align: justify;
-    font-size: 15px;
-    font-family: 'Roboto', sans-serif;
+    grid-template-areas:
+    'img titulo titulo titulo titulo titulo'
+    'img contenido contenido contenido contenido contenido';
+  
+  padding: 0.5rem;
+  width: 100%;
+  height: 100%;
 }
 
-.card-body{
-    background-color: white;
-    padding: 1em;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-}
-.btn.btn-primary{
-    background-color: green;
+.item-title{
+  height: 5rem;
+  text-align: center;
 
 }
 
-.ima_producto{
-    width: 70%;
-    height: 70%;
-    float: left;
-    /*object-fit: cover; */
+.item-img{
+  justify-self: center;
 }
-.contenedor_imagproducto{
-    width: 50%;
-    height: 50%;
-    object-fit: cover;
 
+.item-contenido p{
+  padding: 1rem;
 }
-.info{
-    background-color: white;
-    display: flex;
-    height: auto;
-    width: 50rem;
-    padding: 20px;
-    flex-direction: column;
-    vertical-align: middle;
+
+.item-contenido li{
+  font-size: 1.7rem;
 }
-.card-text{
-    text-align: center;
-    align-items: center;
+
+.p-piezas, .p-precio{
+  text-transform:uppercase;
+  font-weight: bold;
 }
-.li ul{
-    text-align: left;
-	display: inline-block;
-    font-size: 15px;
+
+.p-desc{
+  font-size: 1.7rem;
 }
-.add{
-    text-align: center;
-    font-size: 15px;
+
+.p-precio{
+  font-size: 2rem;
 }
+
+.img-material{
+  width: 45rem;
+  height: 45rem;
+  padding: 2.5rem;
+  object-fit: cover;
+}
+
+/*estos son los estilos de viejos */
 
 
