@@ -142,6 +142,7 @@ font-size: 1.5rem;
   column-gap: 2rem;
   row-gap: 2rem;
   justify-content: center;
+  margin-top: 2rem;
   
   width: 100%;
   filter: drop-shadow(2px 3px 6px #B7B7B7);
