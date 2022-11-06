@@ -32,3 +32,7 @@ def curso5(request):
 
 def contactos(request):
     return render(request, 'home/contactos.html',{})
+def materiales(request):
+    return render(request, 'home/materiales.html',{})
+def producto(request):
+    return render(request, 'home/producto.html',{})

@@ -1,0 +1,89 @@
+.contenedor{
+    width: 100%;
+    height: 100%;
+    margin: 0 0%;
+    display: flex;
+    
+}
+.container-fluid{
+      width: 80%;
+}
+.contenedor-productos{
+    position: relative;
+    margin: 0 auto;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    border-radius: 40%;
+    
+}
+.contenedor_img{
+    object-fit: cover;
+    height: 17rem;
+
+}
+.contenedor_po{
+    flex-wrap: wrap;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+
+}
+.contenedor_categoria{
+    text-align: justify;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.card-body{
+    background-color: white;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+.btn.btn-primary{
+    background-color: green;
+
+}
+
+.ima_producto{
+    width: 70%;
+    height: 70%;
+    float: left;
+    /*object-fit: cover; */
+}
+.contenedor_imagproducto{
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
+
+}
+.info{
+    background-color: white;
+    display: flex;
+    height: auto;
+    width: 50rem;
+    padding: 20px;
+    flex-direction: column;
+    vertical-align: middle;
+}
+.card-text{
+    text-align: center;
+    align-items: center;
+}
+.li ul{
+    text-align: left;
+	display: inline-block;
+    font-size: 15px;
+}
+.add{
+    text-align: center;
+    font-size: 15px;
+}
+
+

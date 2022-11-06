@@ -1,0 +1,30 @@
+{% extends 'layouts/base.html' %}
+{% load static %}
+{% block stylesheet %}
+<link rel="stylesheet" href={%static 'css/style.css'%}>
+<link rel="stylesheet" href= {%static 'css/producto.css'%}>
+{% endblock stylesheet %}
+{% block content %}
+
+<div class="card_productos" style="">
+  <div class="contenedor_imagproducto">
+      <img class="ima_producto" src={% static 'img/servo.jpg' %} alt="">
+  </div>
+    <div class="info">
+      <h5 class="titulo"><strong>Servomotor</strong> <br></h5>
+      <p>Dispositivo actuador que tiene la capacidad de ubicarse en cualquier posición dentro de su rango de operación, y de mantenerse estable en dicha posición.</p>
+      <div class="li">
+        <ul>
+          <li>Largo del servomotor: 23 mm</li>
+          <li>Altura del servomotor: 32 mm</li>
+          <li>Largo del cable: 23 mm</li>
+          <li>Ancho del servomotor: 12 mm</li>
+          <li>Voltaje mínimo - Voltaje máximo: 5V - 5V</li>
+        </ul>
+      </div>
+      <p class="card-text"><strong>$ 49.00 MXM C/U</strong></p>
+    </div>
+</div>
+
+
+{% endblock content %}

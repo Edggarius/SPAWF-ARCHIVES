@@ -1,0 +1,114 @@
+{% extends 'layouts/base.html' %}
+{% load static %}
+{% block stylesheet %}
+<link rel="stylesheet" href={%static 'css/style.css'%}>
+<link rel="stylesheet" href= {%static 'css/materiales.css'%}>
+{% endblock stylesheet %}
+{% block content %}
+
+    
+
+    <div class="container-all">
+      <div class="item-title">
+        <h1 class="titulo">Catalogo de materiales</h1>
+      </div>
+
+      <div class="item-categoria">
+        <select class="select-css">
+          <option>Todos</option>
+          <option>Robótica</option>
+          <option>Herramientas</option>
+          <option>Cables e insumos</option>
+        </select>
+      </div>
+
+      <div class="item-materiales">
+        <div class="barra-navegacion">
+          <div class="group">
+            <svg class="icon" aria-hidden="true" viewBox="0 0 24 24"><g><path d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z"></path></g></svg>
+            <input placeholder="Buscar algun material..." type="search" class="input">
+          </div>
+        </div>
+
+        <div class="container-materiales">
+
+        </div>
+        
+      </div>
+
+      
+    </div>
+    <div class="contenedor__productos">
+        <div class="contenedor__producto">
+            <div class="producto__img">
+                <img src={% static 'img/image 11.png' %} alt="">
+            </div>
+            <div class="producto__titulo">
+                <h2 class="producto--titulo">Servomotor SG90 RC 9g</h2>
+            </div>
+            <div class="producto__precio">
+                <p class="producto--precio">49.00 MX</p>
+            </div>
+            <div class="producto__btn">
+                <h2  class="producto--estado" >Disponible</h2>
+            </div>          
+        </div>
+        <div class="contenedor__producto">
+            <div class="producto__img">
+                <img src={% static 'img/image 8.png' %} alt="">
+            </div>
+            <div class="producto__titulo">
+                <h2 class="producto--titulo">Servomotor SG90 RC 9g</h2>
+            </div>
+            <div class="producto__precio">
+                <p class="producto--precio">49.00 MX</p>
+            </div>
+            <div class="producto__btn">
+                <h2 class="producto--estado" >Disponible</h2>
+            </div>          
+        </div>
+        <div class="contenedor__producto">
+            <div class="producto__img">
+                <img src={% static 'img/sevo2.jpg' %} alt="">
+            </div>
+            <div class="producto__titulo">
+                <h2 class="producto--titulo">Servomotor SG90 RC 9g</h2>
+            </div>
+            <div class="producto__precio">
+                <p class="producto--precio">49.00 MX</p>
+            </div>
+            <div class="producto__btn">
+                <h2 class="producto--estado">Disponible</h2>
+            </div>          
+        </div>
+        <div class="contenedor__producto">
+            <div class="producto__img">
+                <img src={% static 'img/prueba.jpg' %} alt="">
+            </div>
+            <div class="producto__titulo">
+                <h2 class="producto--titulo">Servomotor SG90 RC 9g</h2>
+            </div>
+            <div class="producto__precio">
+                <p class="producto--precio">49.00 MX</p>
+            </div>
+            <div class="producto__btn">
+                <h2 class="producto--estado" >Disponible</h2>
+            </div>          
+        </div>
+        <div class="contenedor__producto">
+            <div class="producto__img">
+                <img src={% static 'img/arduino.jpg' %} alt="">
+            </div>
+            <div class="producto__titulo">
+                <h2 class="producto--titulo">Servomotor SG90 RC 9g</h2>
+            </div>
+            <div class="producto__precio">
+                <p class="producto--precio">49.00 MX</p>
+            </div>
+            <div class="producto__btn">
+                <h2 class="producto--estado" >Disponible</h2>
+            </div>          
+        </div>
+    </div>
+
+{% endblock content %}
