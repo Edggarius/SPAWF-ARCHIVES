@@ -29,7 +29,7 @@ box-shadow: (0 0 0 / 35%) 0px 5px 15px;
   background: #015366;
   color: #fff;
   letter-spacing: 0.2rem;
-  background: linear-gradient(95deg, rgba(11,63,71,1) 0%, rgba(20,81,89,1) 0%, rgba(14,75,84,1) 7%, rgba(1,83,96,1) 21%, rgba(28,119,97,1) 100%);
+  background: linear-gradient(180deg, rgba(1,83,102,1) 0%, rgb(5, 118, 144) 100%);
 }
 
 .contenedor_descripcion{
@@ -197,6 +197,7 @@ ul{
   border-radius: 1rem 1rem 0 0;
   font-family: roboto;
   font-family: 2rem;
+  background: linear-gradient(180deg, rgba(1,83,102,1) 0%, rgb(5, 118, 144) 100%);
 }
 
 
@@ -205,7 +206,7 @@ ul{
 
 }
 .titulo_inscripcion:nth-child(1){
-  background: linear-gradient(95deg, rgba(11,63,71,1) 0%, rgba(20,81,89,1) 0%, rgba(14,75,84,1) 7%, rgba(1,83,96,1) 21%, rgba(28,119,97,1) 100%);
+  /* background: linear-gradient(95deg, rgba(11,63,71,1) 0%, rgba(20,81,89,1) 0%, rgba(14,75,84,1) 7%, rgba(1,83,96,1) 21%, rgba(28,119,97,1) 100%); */
 
 }
 .titulo_inscripcion:nth-child(5){
@@ -222,10 +223,10 @@ ul{
 }
 
 .titulo_curso:nth-child(1){
-  background: linear-gradient(95deg, rgba(11,63,71,1) 0%, rgba(20,81,89,1) 0%, rgba(14,75,84,1) 7%, rgba(1,83,96,1) 21%, rgba(28,119,97,1) 100%);
+  /* background: linear-gradient(95deg, rgba(11,63,71,1) 0%, rgba(20,81,89,1) 0%, rgba(14,75,84,1) 7%, rgba(1,83,96,1) 21%, rgba(28,119,97,1) 100%); */
 }
 .titulo_horario{
-  background: linear-gradient(95deg, rgba(11,63,71,1) 0%, rgba(20,81,89,1) 0%, rgba(14,75,84,1) 7%, rgba(1,83,96,1) 21%, rgba(28,119,97,1) 100%); 
+  /* background: linear-gradient(95deg, rgba(11,63,71,1) 0%, rgba(20,81,89,1) 0%, rgba(14,75,84,1) 7%, rgba(1,83,96,1) 21%, rgba(28,119,97,1) 100%);  */
 }
 .inf_inicio p{
   text-align: center;
