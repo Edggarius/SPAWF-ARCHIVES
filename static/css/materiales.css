@@ -1,21 +1,30 @@
 .item-title { grid-area: titulo; }
 .item-categoria { grid-area: menu; }
 .item-materiales { grid-area: materiales;}
-.item-buscador { grid-area: buscador;}
+.item-buscador { grid-area:}
+.item-buscador { grid-area: buscador;buscador;}
 
 
 /* estilos para cuando 
 este en una pagina de pixeles grandes */
 
 
-  .container-all{
+
+/* estilos para cuando 
+este en una pagina de pixeles grandes */
+
+
+
+
+    .container-all{
   display: grid;
 
     grid-template-areas:
-      'titulo titulo titulo titulo titulo titulo'
+        'titulo titulo titulo titulo titulo titulo'
       'menu buscador buscador buscador buscador buscador'
+        'menu buscador buscador buscador buscador buscador'
       'menu materiales materiales materiales materiales materiales'
-      ;
+        ;
   gap: 1rem;
   padding: 0.5rem;
   width: auto;
