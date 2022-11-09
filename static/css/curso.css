@@ -278,10 +278,10 @@ ul{
 box-shadow: 9px 11px 18px -8px rgba(117,117,117,0.96);
 }
 
-/*.contenedor_banner{
+*/.contenedor_banner{
   margin: 2rem;
   width: 80rem;
-}*/
+}
 
 .banner{
   font-size: 1.8rem;

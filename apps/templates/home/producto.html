@@ -6,25 +6,32 @@
 {% endblock stylesheet %}
 {% block content %}
 
-<div class="card_productos" style="">
-  <div class="contenedor_imagproducto">
-      <img class="ima_producto" src={% static 'img/servo.jpg' %} alt="">
-  </div>
-    <div class="info">
-      <h5 class="titulo"><strong>Servomotor</strong> <br></h5>
-      <p>Dispositivo actuador que tiene la capacidad de ubicarse en cualquier posición dentro de su rango de operación, y de mantenerse estable en dicha posición.</p>
-      <div class="li">
-        <ul>
-          <li>Largo del servomotor: 23 mm</li>
-          <li>Altura del servomotor: 32 mm</li>
-          <li>Largo del cable: 23 mm</li>
-          <li>Ancho del servomotor: 12 mm</li>
-          <li>Voltaje mínimo - Voltaje máximo: 5V - 5V</li>
-        </ul>
-      </div>
-      <p class="card-text"><strong>$ 49.00 MXM C/U</strong></p>
+<div class="container-material">
+  <div class="container-grid">
+    <div class="item-title">
+      <h1>Teclado Matricial 4X4</h1>
     </div>
-</div>
+    <div class="item-img">
+      <img class="img-material" src={% static 'img/teclado_matricial.png' %} alt="">
+    </div>
+    <div class="item-contenido">
+      <div class="parrafo">
+        <p class="p-desc">Utiliza este teclado matricial 4 x 4 en tus proyectos con placas de desarrollo o microcontroladores, es útil cuando necesitas colocar algún código numérico en aplicaciones como creación de cajas de seguridad, controles de acceso o en general activación por algún botón del teclado.</p>
 
+        <ul>
+          <li> 16 teclas</li>
+          <li> 8 pines de conexión</li>
+          <li> Cable extra plano</li>
+          <li> Membrana semi flexible</li>
+        </ul>
+
+        <p class="p-piezas">Piezas disponlibles: 5.</p>
+
+        <p class="p-precio">$ 63.00 MX C/U</p>
+      </div>
+      
+    </div>
+  </div>
+</div>
 
 {% endblock content %}

@@ -1,89 +1,76 @@
-.contenedor{
-    width: 100%;
-    height: 100%;
-    margin: 0 0%;
-    display: flex;
-    
-}
-.container-fluid{
-      width: 80%;
-}
-.contenedor-productos{
-    position: relative;
-    margin: 0 auto;
+.item-title { grid-area: titulo;}
+.item-img { grid-area: img;}
+.item-contenido { grid-area: contenido;}
+
+.container-material{
+  width: auto;
+  height: auto;
+  margin: 1.5rem;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  background: white;
+  -webkit-box-shadow: 9px 11px 18px -8px rgba(117,117,117,0.96);
+  -moz-box-shadow: 9px 11px 18px -8px rgba(117,117,117,0.96);
+  box-shadow: 9px 11px 18px -8px rgba(117,117,117,0.96);
 }
 
-.card{
-    display: flex;
-    flex-direction: column;
-    border-radius: 40%;
-    
+.container-grid{
+  display: grid;
+
+    grid-template-areas:
+    'titulo titulo titulo titulo titulo titulo'
+    'img contenido contenido contenido contenido contenido';
+  
+  padding: 0.5rem;
+  width: 100%;
+  height: 100%;
 }
-.contenedor_img{
-    object-fit: cover;
-    height: 17rem;
+
+.item-title{
+  height: 5rem;
+  text-align: center;
 
 }
-.contenedor_po{
-    flex-wrap: wrap;
-    border-radius: 50px;
-    display: flex;
+
+.item-img{
+  justify-self: center;
+  margin-right: 5rem;
+}
+
+.item-contenido p{
+  padding: 1rem;
+}
+
+.item-contenido li{
+  font-size: 1.7rem;
+  margin-left: 5rem;
+  margin-top: 1rem;
+}
+
+.p-piezas, .p-precio{
+  margin-top: 2.5rem;
+  text-transform:uppercase;
+  font-weight: bold;
+}
+
+.p-desc{
+  font-size: 1.7rem;
+}
+
+.p-precio{
+  font-size: 2rem;
+}
+
+.img-material{
+  width: 30rem;
+  height: 30rem;
+  object-fit: scale-down;
+}
+main{
+display: flex;
     justify-content: center;
-    gap: 2em;
+  }
 
+.container-material{
+  width: 100rem;
 }
-.contenedor_categoria{
-    text-align: justify;
-    font-size: 15px;
-    font-family: 'Roboto', sans-serif;
-}
-
-.card-body{
-    background-color: white;
-    padding: 1em;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-}
-.btn.btn-primary{
-    background-color: green;
-
-}
-
-.ima_producto{
-    width: 70%;
-    height: 70%;
-    float: left;
-    /*object-fit: cover; */
-}
-.contenedor_imagproducto{
-    width: 50%;
-    height: 50%;
-    object-fit: cover;
-
-}
-.info{
-    background-color: white;
-    display: flex;
-    height: auto;
-    width: 50rem;
-    padding: 20px;
-    flex-direction: column;
-    vertical-align: middle;
-}
-.card-text{
-    text-align: center;
-    align-items: center;
-}
-.li ul{
-    text-align: left;
-	display: inline-block;
-    font-size: 15px;
-}
-.add{
-    text-align: center;
-    font-size: 15px;
-}
-
-
