@@ -16,7 +16,7 @@
   background: #F6F6F6;
   border-radius: 10px;
   width: 25rem; 
-  height: auto;
+  height: 25.1rem;
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -29,6 +29,7 @@
 
 .contenedor-card-curso:hover{
   transform: translateY(-7px);
+  transition: 0.3s;
 }
 
 .img-cursos{

@@ -81,7 +81,14 @@
 }
 
 .btn, .modal-body, .modal-title, .form-control{
-    font-size: initial !important;
+    font-size: initial;
+}
+.modal-title{
+    font-size: 2.2rem;
+}
+.close, span{
+    font-size: initial;
+    border: none;
 }
 
 .form-group{
