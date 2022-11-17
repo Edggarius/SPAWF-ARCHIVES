@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from .models import Producto
 
 def home(request):
     return render(request, 'home/home.html',{})
@@ -32,7 +33,19 @@ def curso5(request):
 
 def contactos(request):
     return render(request, 'home/contactos.html',{})
+
 def materiales(request):
-    return render(request, 'home/materiales.html',{})
+    productos = Producto.objects.all()
+    # page = request.GET.get('page')
+    # paginator = Paginator(products, 2)  Control-K + Control-C   // Descomentar Ctrl-k + Ctrl-u
+    # products = paginator.get_page(page)
+    context = {
+        "products": productos
+    }
+
+    return render(request, 'home/materiales.html',context)
+
+
 def producto(request):
+    
     return render(request, 'home/producto.html',{})

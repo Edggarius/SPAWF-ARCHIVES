@@ -207,10 +207,32 @@
             </div>          
         </div>
         </a>
+        {% for producto in products %}
+        <a href="" class="a-links">
+            <div class="contenedor__producto">
+                <div class="producto__img">                     
+                    <img
+                    src="/{{producto.imagen}}"
+                    alt=" random imgee"/>
+                </div>
+                <div class="producto__titulo">
+                    <h2 class="producto--titulo">{{producto.nombre}}</h2>
+                </div>
+                <div class="producto__precio">
+                    <p class="producto--precio">{{producto.precio}} MX</p>
+                </div>
+                <div class="producto__btn">
+                    <h2 class="producto--estado" >{{producto.status}}</h2>
+                </div>          
+            </div>
+            </a>
+        {% endfor %}
+
 
     </div>
       </div>
     </div>
-    
 
+
+   
 {% endblock content %}
