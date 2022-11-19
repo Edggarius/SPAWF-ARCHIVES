@@ -9,27 +9,17 @@
 <div class="container-material">
   <div class="container-grid">
     <div class="item-title">
-      <h1>Teclado Matricial 4X4</h1>
+      <h1>{{producto.nombre}}</h1>
     </div>
     <div class="item-img">
-      <img class="img-material" src={% static 'img/teclado_matricial.png' %} alt="">
+      <img class="img-material" src={{producto.imagen.url}} alt="">
     </div>
     <div class="item-contenido">
       <div class="parrafo">
-        <p class="p-desc">Utiliza este teclado matricial 4 x 4 en tus proyectos con placas de desarrollo o microcontroladores, es útil cuando necesitas colocar algún código numérico en aplicaciones como creación de cajas de seguridad, controles de acceso o en general activación por algún botón del teclado.</p>
-
-        <ul>
-          <li> 16 teclas</li>
-          <li> 8 pines de conexión</li>
-          <li> Cable extra plano</li>
-          <li> Membrana semi flexible</li>
-        </ul>
-
-        <p class="p-piezas">Piezas disponlibles: 5.</p>
-
-        <p class="p-precio">$ 63.00 MX C/U</p>
-      </div>
-      
+        <p class="p-desc">{{producto.descripcion}}</p>    
+        <p class="p-piezas">Piezas disponlibles: {{producto.stock}}</p>
+        <p class="p-precio">$ {{producto.precio}} MX C/U</p>
+      </div>      
     </div>
   </div>
 </div>

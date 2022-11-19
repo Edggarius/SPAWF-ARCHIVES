@@ -18,7 +18,7 @@
   display: grid;
 
     grid-template-areas:
-    'titulo titulo titulo titulo titulo titulo'
+    '. titulo titulo titulo titulo titulo'
     'img contenido contenido contenido contenido contenido';
   
   padding: 0.5rem;
@@ -28,7 +28,7 @@
 
 .item-title{
   height: 5rem;
-  text-align: center;
+
 
 }
 
@@ -38,7 +38,7 @@
 }
 
 .item-contenido p{
-  padding: 1rem;
+  padding: 1rem 0;
 }
 
 .item-contenido li{

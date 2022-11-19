@@ -37,7 +37,6 @@ li, p, .titulo{
 body{
   display: flex;
   width: 100%;
-  min-width: 702px;
   flex-direction: column;
   min-height: 100vh;
   background-color: var(--azul-fondo);
