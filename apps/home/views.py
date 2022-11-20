@@ -1,8 +1,16 @@
 from django.shortcuts import render
 from .models import Producto
+from .models import Carrusel
 
 def home(request):
-    return render(request, 'home/home.html',{})
+    carrusel = Carrusel.objects.all()
+    context = {
+        "carrusel": carrusel
+    }
+    return render(request, 'home/home.html',context)
+
+
+
 
 def historia(request):
     return render(request, 'home/historia.html',{})

@@ -21,3 +21,10 @@ class Producto(models.Model):
 
    #img
         #Productos
+
+
+img_path = 'static/img'
+class Carrusel(models.Model):
+ image = models.ImageField(upload_to=f'{img_path}Carrusel')
+ def __str__(self):
+    return self.image.name
