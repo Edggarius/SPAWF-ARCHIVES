@@ -27,6 +27,7 @@
 }
 
 .item-title{
+  width: 100%;
   height: 5rem;
   text-align: center;
 
@@ -34,6 +35,7 @@
 
 .item-img{
   justify-self: center;
+  height: 100%;
   margin-right: 5rem;
 }
 
@@ -66,6 +68,7 @@
   height: 30rem;
   object-fit: scale-down;
 }
+
 main{
 display: flex;
     justify-content: center;
@@ -73,4 +76,31 @@ display: flex;
 
 .container-material{
   width: 100rem;
+}
+
+@media (max-width: 915px){
+  .container-grid{
+  display: grid;
+
+    grid-template-areas:
+    'titulo'
+    'img'
+    'contenido';
+  
+    padding: 0.5rem;
+    width: 100%;
+    height: 100%;
+  }
+
+  .p-precio, .p-piezas{
+    text-align: center;
+  }
+
+  .img-material{
+    width: 100%;
+    height: 100%;
+    object-fit: scale-down;
+  }
+
+
 }
