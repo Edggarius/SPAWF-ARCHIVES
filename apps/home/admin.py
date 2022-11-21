@@ -1,6 +1,7 @@
 from django.contrib import admin
-from .models import Producto, Carrusel
+from .models import *
 # Register your models here.
 
 admin.site.register(Producto)
 admin.site.register(Carrusel)
+admin.site.register(Expre)

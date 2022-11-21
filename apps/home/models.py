@@ -1,4 +1,5 @@
 from django.db import models
+from ckeditor.fields import RichTextField
 
 CATEGORY_CHOICES = (('',''),('Robótica','Robótica'), ('Herramientas','Herramientas'), ('Cables, accesorios e insumos','Cables, accesorios e insumos'))
 # Create your models here.
@@ -16,9 +17,6 @@ class Producto(models.Model):
     def __str__(self):
         return self.nombre
     
-
-
-
    #img
         #Productos
 
@@ -28,3 +26,16 @@ class Carrusel(models.Model):
  image = models.ImageField(upload_to=f'{img_path}Carrusel')
  def __str__(self):
     return self.image.name
+
+class Expre(models.Model):
+    nombre = models.CharField(max_length=100) 
+    descripcion = RichTextField()
+    costo = models.DecimalField(max_digits=10, decimal_places=2)
+    inicio = models.DateField()
+    hora = models.TimeField()
+    imagen = models.FileField(null=False, upload_to=f'static/img/expres', default=None)
+    created = models.DateTimeField(auto_now_add=True)
+    updated = models.DateTimeField(auto_now=True)
+
+    def __str__(self):
+       return self.nombre

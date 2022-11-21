@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from .models import Producto
 from .models import Carrusel
+from .models import Expre
 
 def home(request):
     carrusel = Carrusel.objects.all()
@@ -22,7 +23,11 @@ def servicios(request):
     return render(request, 'home/servicios.html',{})
 
 def cursos(request):
-    return render(request, 'home/cursos.html',{})
+    expres = Expre.objects.all()
+    context = {
+        "express" : expres
+    }
+    return render(request, 'home/cursos.html',context)
 
 def curso(request):
     return render(request, 'home/curso.html',{})
@@ -82,3 +87,17 @@ def producto(request, producto_id):
     except Producto.DoesNotExist:
             raise Http404('Product Not found')
 
+#def express(request, express_id):
+ #   try:
+  ##     context = {
+    #        "express": express
+     #   }
+      #  return render(request, 'home/express.html',context)
+  #  except Expre.DoesNotExist:
+   #     raise Http404('Product Not found')
+def express(request):
+    expres = Expre.objects.all()
+    context = {
+        "express" : expres
+    }
+    return render(request, 'home/express.html',context)

@@ -45,7 +45,16 @@
       <h1>Automotriz</h1>
     </div>
   </div>
-
+  
+  {% for express in express %}
+  <div class="contenedor-card-curso">
+    <a href="">
+      <img class="img-cursos" src="/{{express.imagen}}" alt="random imgee"></a>
+    <div class="titulo_curso">
+      <h1>{{express.nombre}}</h1>
+    </div>
+  </div>
+  {% endfor %}
 </div>
 
 
