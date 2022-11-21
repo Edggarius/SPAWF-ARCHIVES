@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from .models import Producto
+from .models import Producto, Curso, Modulo
 from .models import Carrusel
 
 def home(request):
@@ -20,12 +20,6 @@ def contactos(request):
 
 def servicios(request):
     return render(request, 'home/servicios.html',{})
-
-def cursos(request):
-    return render(request, 'home/cursos.html',{})
-
-def curso(request):
-    return render(request, 'home/curso.html',{})
 
 def curso2(request):
     return render(request, 'home/curso2.html',{})
@@ -82,3 +76,19 @@ def producto(request, producto_id):
     except Producto.DoesNotExist:
             raise Http404('Product Not found')
 
+def cursos(request):
+    cursos = Curso.objects.all()
+    context = {
+        "cursos" : cursos
+    }
+    return render(request, 'home/cursos.html',context)
+
+def curso(request, curso_id):
+    mod = Modulo.objects.filter(curso_id=curso_id)    
+    curso = Curso.objects.get(id=curso_id)
+    
+    context = {
+        "modulos": mod,
+        "curso": curso
+    }
+    return render(request, 'home/curso.html',context)
