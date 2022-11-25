@@ -5,8 +5,8 @@ CATEGORY_CHOICES = (('',''),('Robótica','Robótica'), ('Herramientas','Herramie
 # Create your models here.
 class Producto(models.Model):
     nombre = models.CharField(max_length=100)
-    descripcion = models.TextField()
-    precio = models.DecimalField(max_digits=5, decimal_places=2)
+    descripcion = RichTextField()
+    precio = models.DecimalField(max_digits=15, decimal_places=2)
     stock = models.PositiveIntegerField(null=False)
     created = models.DateTimeField(auto_now_add=True)
     updated = models.DateTimeField(auto_now=True)
