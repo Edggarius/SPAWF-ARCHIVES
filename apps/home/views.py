@@ -95,9 +95,9 @@ def producto(request, producto_id):
       #  return render(request, 'home/express.html',context)
   #  except Expre.DoesNotExist:
    #     raise Http404('Product Not found')
-def express(request):
-    expres = Expre.objects.all()
+def express(request, express_id):
+    expres = Expre.objects.get(id=express_id)
     context = {
-        "express" : expres
+        "curso" : expres
     }
     return render(request, 'home/express.html',context)

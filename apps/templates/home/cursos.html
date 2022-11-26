@@ -11,6 +11,17 @@
 
 <div class="contenedor-cursos">
 
+  {% for express in express %}
+  <div class="contenedor-card-curso">
+    <a href={%url 'express' express.id%}>
+      <img class="img-cursos" src="/{{express.imagen}}" alt="random imgee"></a>
+    <div class="titulo_curso">
+      <h1>{{express.nombre}}</h1>
+    </div>
+  </div>
+  {% endfor %}
+
+
   <div class="contenedor-card-curso">
     <a href={% url 'curso5' %} target="_self"><img class="img-cursos" src={% static 'img/anaDigit.jpg' %} alt=""></a>
     <div class="titulo_curso">
@@ -46,15 +57,7 @@
     </div>
   </div>
   
-  {% for express in express %}
-  <div class="contenedor-card-curso">
-    <a href="">
-      <img class="img-cursos" src="/{{express.imagen}}" alt="random imgee"></a>
-    <div class="titulo_curso">
-      <h1>{{express.nombre}}</h1>
-    </div>
-  </div>
-  {% endfor %}
+  
 </div>
 
 
