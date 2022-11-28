@@ -1,0 +1,209 @@
+.container-nav{
+    /* position: fixed;
+    top: 0;
+    left: 0; */
+  width: 100%;
+  max-width: 100%;
+  height: 10%;
+  min-width: fit-content;
+  padding: 15px 20px;
+  background: #033540;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: auto;
+  box-sizing: border-box;
+}
+
+.navegacion{
+  display: flex;
+  column-gap: 25px;
+}
+
+.logo{
+  padding: 10px 15px;
+  height: 70px;
+  width: 70px;
+}
+
+.logo2{
+  display: none;
+  margin-top: 1rem;
+  padding: 10px 0;
+  height: 70px;
+  width: 100%;
+  text-align: center;
+}
+
+.logo-desplegable{
+  object-fit: cover;
+  height: 100%;
+}
+
+.logo--img{
+  object-fit: cover;
+  height: 100%;
+}
+
+.nav-content {
+  display: block; 
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.inicio, .somos, .cursos, .materiales, .servicios, .contacto{
+  padding: 0 5px;
+  text-decoration: none;
+  font-size: 1.8rem;
+  font-family: var(--roboto);
+  color: #E4F5F5;
+}
+
+.btn-rayas{
+  display: none;
+}
+
+.nav-content:nth-child(6){
+  /* margin-right: 15px; */
+}
+
+.nav-content a:after{
+  content: "";
+  position: absolute;
+  background-color: #ededed;
+  height: 2px;
+  width: 0;
+  left: 0;
+  bottom: -5px;
+  transition: 0.3s;
+}
+.nav-content a:hover{
+  color: #ffffff;
+  font-weight: 400;
+}
+.nav-content a:hover:after{
+  width: 100%;
+}
+
+/* estilos del boton del menu */
+.button{
+    display: none;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+	  background-repeat:no-repeat;
+	  background-size:100vw 100vh;
+}
+
+.lbl-menu{
+    width: 40px;
+    height: 30px;
+    position: relative;
+    cursor: pointer;
+	transform: scale(1.2);
+}
+.lbl-menu #spn1,#spn2,#spn3{
+    position: absolute;
+    content: '';
+    background:rgb(255, 255, 255);
+    width: 40px;
+    height: 5px;
+    border-radius: 5px;
+    transition: all 400ms ease;
+}
+#spn2{
+    top: 12px;
+}
+#spn3{
+    top: 23px;
+}
+#btn-menu{
+    display: none;
+}
+#btn-menu:checked ~ .lbl-menu #spn1{
+    transform: rotate(140deg);
+    top: 10px;
+}
+#btn-menu:checked ~ .lbl-menu #spn2{
+    opacity: 0;
+}
+#btn-menu:checked ~ .lbl-menu #spn3{
+    transform: rotate(-140deg);
+    top: 10px;
+}
+
+
+@media (max-width: 915px){
+
+  .btn-rayas{
+    display: block;
+  }
+
+  .btn-rayas .btn-linea{
+    display: block;
+    height: 0.2rem;
+    width: 3rem;
+    background-color: black;
+    margin: .6rem 0;
+  }
+
+  .navegacion{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    background-color: #033540;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    height: 100%;
+    width: 40%;
+    transform: translateX(-101%);
+  }
+
+  .navegacion.activar{
+    transform: translateX(0%);
+    transition: transform .7s;
+  }
+
+  .navegacion.desactivar{
+    transform: translateX(-101%);
+    transition: transform .7s;
+  }
+
+  .nav-content{
+    margin-top: 2rem;
+    width: 100%;
+  }
+
+  .inicio, .somos, .cursos, .materiales, .servicios, .contacto{
+    width: 100%;
+    text-align: center;
+  }
+
+  .navegacion-nav{
+    margin-top: 45%;
+  }
+
+  .logo--img.activar{
+    display: none;
+    transition: display 2s;
+  }
+
+  .logo--img.desactivar{
+    display: block;
+    transition: display 2s;
+  }
+
+  .logo2{
+    display: block;
+  }
+  
+  .button{
+    display: flex;
+  }
+  
+
+}
+

@@ -7,6 +7,7 @@
     column-gap: 5rem;
 }
 .contenedor__servicios, .contenedor__contactanos{
+    margin-top: 1rem;
     -webkit-box-shadow: 11px 12px 19px -9px rgba(138,138,138,1);
     -moz-box-shadow: 11px 12px 19px -9px rgba(138,138,138,1);
     box-shadow: 11px 12px 19px -9px rgba(138,138,138,1);
@@ -14,11 +15,13 @@
     background-color: white;
     padding: 15px 25px;
 }
+
 .contenedor__servicios{
-    width: fit-content;
-    height: 48rem;
+    width: auto;
+    height: auto;
 
 }
+
 .contenedor__servicios li{
     font-family: "Roboto", sans-serif;
     font-weight: 400;
@@ -46,6 +49,7 @@
     row-gap: 15px;
 }
 .contactanos__contacto {
+    margin-top: 1rem;
     display: grid; 
     column-gap: 9px;
     justify-content: start;
@@ -57,7 +61,8 @@
      display: flex;
      height: 50px;
      justify-content: center;
-    }
+  }
+
   .contacto__parrafo { 
     grid-area: contacto__parrafo;
     display: flex;
@@ -71,10 +76,17 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: start;
-    width: 30rem;
+    width: 100%;
     height: 100%;
 }
 
 .titulo{
     margin-bottom: 35px;
+}
+
+@media (max-width: 915px){
+  .contenedor{
+    flex-direction: column;
+  }
+
 }

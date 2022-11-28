@@ -29,6 +29,9 @@ DEBUG = True
 ALLOWED_HOSTS = []
 
 
+
+
+
 # Application definition
 
 DJANGO_APPS = [
@@ -151,3 +154,23 @@ STATICFILES_DIRS = (
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+# settings.py
+ 
+LANGUAGE_CODE = 'es-spanish'  # or other appropriate code
+USE_I18N = True
+USE_L10N = True
+
+
+  
+JAZZMIN_SETTINGS = {
+   
+     "login_logo": "\img\logo_img.png",
+     "site_title": "Página de administración",
+     "welcome_sign": "Bienvenido al panel de administrador",
+     
+     "usermenu_links": [
+        {"name": "Support", "url": "https://chat.whatsapp.com/K6w45yEl2Ru0lqLrtuPAxB", "new_window": True},
+        {"model": "auth.user"}
+    ],
+
+}

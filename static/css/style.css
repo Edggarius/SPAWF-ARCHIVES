@@ -37,6 +37,7 @@ li, p, .titulo{
 body{
   display: flex;
   width: 100%;
+  /* min-width: 702px; */
   flex-direction: column;
   min-height: 100vh;
   background-color: var(--azul-fondo);
@@ -50,45 +51,6 @@ body{
 }
 
 /* Estos son los estilos del header */
-header{
-  width: 100%;
-  background-color: #015366;
-  display: flex;
-  justify-content: space-between;
-}
-
-.navegacion{
-  display: flex;
-  column-gap: 25px;
-  
-}
-.logo{
-  padding: 10px 15px;
-  height: 70px;
-  width: 70px;
-
-}
-.logo--img{
-  object-fit: cover;
-  height: 100%;
-}
-
-
-.nav-content {
-  width: fit-content;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.inicio, .somos, .cursos, .materiales, .servicios, .contacto{
-  padding: 0 5px;
-  text-decoration: none;
-  font-size: 1.8rem;
-  font-family: var(--roboto);
-  color: #E4F5F5;
-
-}
 
 
 /* Estos son los estilos del footer */
@@ -110,10 +72,7 @@ footer{
   display: flex;
   column-gap: 24px;   
 }
-.nav-content:nth-child(6){
-  margin-right: 15px;
 
-}
 
 .face-content{
   width: 30px;
@@ -151,23 +110,7 @@ footer{
   letter-spacing: 0.5px;
 
 }
-.nav-content a:after{
-  content: "";
-  position: absolute;
-  background-color: #ededed;
-  height: 2px;
-  width: 0;
-  left: 0;
-  bottom: -5px;
-  transition: 0.3s;
-}
-.nav-content a:hover{
-  color: #ffffff;
-  font-weight: 400;
-}
-.nav-content a:hover:after{
-  width: 100%;
-}
+
 
 .carrusel__img{
   vertical-align: middle;

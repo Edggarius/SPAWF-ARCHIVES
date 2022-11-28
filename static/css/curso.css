@@ -11,19 +11,16 @@
   margin: 1rem 0 3rem 0;
 
   -webkit-box-shadow: 9px 11px 18px -8px rgba(117,117,117,0.96);
--moz-box-shadow: 9px 11px 18px -8px rgba(117,117,117,0.96);
-box-shadow: 9px 11px 18px -8px rgba(117,117,117,0.96);
-box-shadow: (0 0 0 / 35%) 0px 5px 15px;
+  -moz-box-shadow: 9px 11px 18px -8px rgba(117,117,117,0.96);
+  box-shadow: 9px 11px 18px -8px rgba(117,117,117,0.96);
+  box-shadow: (0 0 0 / 35%) 0px 5px 15px;
 }
 
+
 .contendor_titulo{
-  
   width: 50%;
   text-align: center;
   text-transform: uppercase;
-}
-
-.contendor_titulo{
   border-radius: 10px;
   padding: .6rem; 
   background: #015366;
@@ -34,63 +31,38 @@ box-shadow: (0 0 0 / 35%) 0px 5px 15px;
 
 .contenedor_descripcion{
   margin: 2rem 2rem 0 2rem;
-  width: 80rem;
-  
+  width: 70%;
 }
 
 .descripcion{
   text-align: center;
-
+  width: 100%;
 }
 
-/* estilos del primer modulo */
-/*.cont_mod1{
-  background: #fff;
-  border-radius: 10px;
+.contenedor_tMod1{
   width: 100%;
   height: auto;
-  justify-content: center;
-  flex-flow: row wrap;
-  display: grid ;
-  flex-direction: row;
-  margin: 2rem 0 3rem 0;
-
-  -webkit-box-shadow: 9px 11px 18px -8px rgba(117,117,117,0.96);
--moz-box-shadow: 9px 11px 18px -8px rgba(117,117,117,0.96);
-box-shadow: 9px 11px 18px -8px rgba(117,117,117,0.96);
-
-}*/
-
-
-
-.contenedor_tMod1{
-  display: block;
-
-  width: 60rem;
-  padding: 2rem 2rem 0 2rem;
-  text-align: center;
+  padding: 2rem 2rem 2rem 2rem;
   text-transform: uppercase;
-
 }
 
 .contenedor_descMod1{
-  display: inline;
-  width: 60rem;
-  margin: 2rem 10rem 2rem 5rem;
+  height: 100%;
+  width: 95%;
+  margin: 1.5rem;
 }
 
 .curso-img{
-  width: 25rem;
-  height: 25rem;
+  width: 100%;
+  height: 100%;
   border-radius: 0.5rem;
 }
 
 .contenedor_imgMod1{
-  
   object-fit: cover;
-  width: 25rem;
-  height: 25rem;
-  margin: 0 0 1.5rem 4rem;
+  width: 50vh;
+  height: 30vh;
+  margin: 0 2rem 1.5rem 2rem;
 }
 
 ul{
@@ -99,59 +71,26 @@ ul{
   font-size: 1.6rem;
 }
 
+.title{
+  font-family:'Montserrat';
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin: 0;;
+}
 
-/* Stylos del modulo 2 */
+li{
+  font-family:'Roboto';
+}
 
-.cont_mod2{
-  background: #fff;
-  border-radius: 10px;
+p{
+  font-family:'Roboto';
+  font-size: 1.6rem;
   width: 100%;
-  height: auto;
-  justify-content: center;
-  flex-flow: row wrap;
-  display: flex;
-  flex-direction: row;
-  margin: 2rem 0 3rem 0;
-
-  -webkit-box-shadow: 9px 11px 18px -8px rgba(117,117,117,0.96);
-  -moz-box-shadow: 9px 11px 18px -8px rgba(117,117,117,0.96);
-  box-shadow: 9px 11px 18px -8px rgba(117,117,117,0.96);
-
 }
 
-.contenedor_tMod2{
-  display: block;
-  margin: 2rem 30rem;
-  width: 60rem;
-  text-align: center;
-  text-transform: uppercase;
 
-}
 
-.contenedor_imgMod2{
-  display: inline;
-  
-  width: 25rem;
-  height: 25rem;
-  margin: 2rem 10rem 2rem 4rem;
-}
 
-.curso-img2{
-  border-radius: 1rem;
-  object-fit: cover;
-  width: 25rem;
-  height: 25rem;
-}
-
-.contenedor_descMod2{
-  display: inline;
-  width: 60rem;
-  margin: 0 0 1.5rem 4rem;
-}
-
-.desc_mod2{
-  margin-top: 1rem;
-}
 
 /* estilos de las info horario, curso */
 
@@ -205,10 +144,7 @@ ul{
   border-radius:0;
 
 }
-.titulo_inscripcion:nth-child(1){
-  /* background: linear-gradient(95deg, rgba(11,63,71,1) 0%, rgba(20,81,89,1) 0%, rgba(14,75,84,1) 7%, rgba(1,83,96,1) 21%, rgba(28,119,97,1) 100%); */
 
-}
 .titulo_inscripcion:nth-child(5){
   border-radius: 0 0 1rem 1rem;
   display: flex;
@@ -222,12 +158,7 @@ ul{
   border-radius: 0 0 1rem 1rem;
 }
 
-.titulo_curso:nth-child(1){
-  /* background: linear-gradient(95deg, rgba(11,63,71,1) 0%, rgba(20,81,89,1) 0%, rgba(14,75,84,1) 7%, rgba(1,83,96,1) 21%, rgba(28,119,97,1) 100%); */
-}
-.titulo_horario{
-  /* background: linear-gradient(95deg, rgba(11,63,71,1) 0%, rgba(20,81,89,1) 0%, rgba(14,75,84,1) 7%, rgba(1,83,96,1) 21%, rgba(28,119,97,1) 100%);  */
-}
+
 .inf_inicio p{
   text-align: center;
   font-size: 2rem;
@@ -262,22 +193,7 @@ ul{
   padding-top: 3.5rem;
 }
 
-/* estilo de el ultimo banner */
 
-/*.cont_banner{
-  background: #fff;
-  border-radius: 10px;
-  width: 100%;
-  height: auto;
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  margin: 1rem 0 3rem 0;
-
-  -webkit-box-shadow: 9px 11px 18px -8px rgba(117,117,117,0.96);
--moz-box-shadow: 9px 11px 18px -8px rgba(117,117,117,0.96);
-box-shadow: 9px 11px 18px -8px rgba(117,117,117,0.96);
-}
 
 */.contenedor_banner{
   margin: 2rem;
@@ -302,6 +218,7 @@ box-shadow: 9px 11px 18px -8px rgba(117,117,117,0.96);
 .banner__btn img{
   height: 25px;
 }
+
 .cont_banner{
   padding: 1rem 1rem;
   display: flex;
@@ -312,7 +229,7 @@ box-shadow: 9px 11px 18px -8px rgba(117,117,117,0.96);
 border-radius: 1rem;
 }
 .banner__texto{
-  width: 103%;
+  width: 100%;
   padding: 0;
 }
 .cont__btn{
@@ -359,6 +276,17 @@ border-radius: 1rem;
   --bs-btn-disabled-border-color: #FFA500;
 }
 
+.contenedor_tMod1{
+  grid-area: contenedorTM1;
+}
+.contenedor_descMod1{
+  grid-area: contenedorDescM1;
+}
+contenedor_imgMod1{
+  grid-area: contenedorImgM1;
+}
+
+
 .cont_mod1{
 	-webkit-animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 	        animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
@@ -367,99 +295,22 @@ border-radius: 1rem;
   width: 100%;
   margin: 2rem 0;
   display: grid;
-  justify-items: stretch;
+  grid-template-areas:
+      'contenedorTM1 contenedorTM1 contenedorTM1 contenedorTM1'
+      'contenedorDescM1 contenedorDescM1 contenedorDescM1 contenedorImgM1'
+      ;
+  gap: 1rem;
   align-items: center;
-  
   box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
-  
-  grid-template-columns: 3fr 1fr;
-  grid-template-rows: 0.1fr 1fr;
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
 }
 
-.contenedor_descMod1 { grid-area: 2 / 1 / 3 / 2; }
-.contenedor_imgMod1 { grid-area: 1 / 2 / 3 / 3; 
-  display: flex;
-  width: 100%;
-
-  height: 80%;
-  /* max-height: 50rem; */
-  padding: 2rem;
-  justify-content: center;
-  align-items: center;
-  margin: 0;
-}
-.contenedor_tMod1 { 
-  grid-area: 1 / 1 / 2 / 3; 
-  width: 100%;
-}
 .curso-img{
   width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius:0.5rem;
 }
-/* ----------------------------------------------
- * Generated by Animista on 2022-11-8 21:42:5
- * Licensed under FreeBSD License.
- * See http://animista.net/license for more info. 
- * w: http://animista.net, t: @cssanimista
- * ---------------------------------------------- */
 
-/**
- * ----------------------------------------
- * animation scale-up-ver-center
- * ----------------------------------------
- */
-/* ----------------------------------------------
- * Generated by Animista on 2022-11-9 7:35:52
- * Licensed under FreeBSD License.
- * See http://animista.net/license for more info. 
- * w: http://animista.net, t: @cssanimista
- * ---------------------------------------------- */
-
-/**
- * ----------------------------------------
- * animation scale-in-ver-top
- * ----------------------------------------
- */
-/* ----------------------------------------------
- * Generated by Animista on 2022-11-9 7:37:21
- * Licensed under FreeBSD License.
- * See http://animista.net/license for more info. 
- * w: http://animista.net, t: @cssanimista
- * ---------------------------------------------- */
-
-/**
- * ----------------------------------------
- * animation scale-in-ver-top
- * ----------------------------------------
- */
-/* ----------------------------------------------
- * Generated by Animista on 2022-11-9 7:39:9
- * Licensed under FreeBSD License.
- * See http://animista.net/license for more info. 
- * w: http://animista.net, t: @cssanimista
- * ---------------------------------------------- */
-
-/**
- * ----------------------------------------
- * animation scale-in-ver-top
- * ----------------------------------------
- */
- /* ----------------------------------------------
- * Generated by Animista on 2022-11-9 7:41:2
- * Licensed under FreeBSD License.
- * See http://animista.net/license for more info. 
- * w: http://animista.net, t: @cssanimista
- * ---------------------------------------------- */
-
-/**
- * ----------------------------------------
- * animation slide-in-left
- * ----------------------------------------
- */
 @-webkit-keyframes slide-in-left {
   0% {
     -webkit-transform: translateX(-1000px);
@@ -559,25 +410,48 @@ border-radius: 1rem;
   }
 }
 
-.title_mod1{
-  text-align: initial;
-  font-weight: 600;
-  font-family: Montserrat;
-  font-size: 2.1rem;
+@media (max-width: 915px){
+
+  .contenedor_tMod1{
+    width: 100%;
+    text-align: center;
+  }
+
+  .desc_mod1{
+    width: 100%;
+  }
+
+  .curso-img{
+    width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+  }
+
+  .contenedor_imgMod1{
+    height: 100%;
+  }
   
+  .cont_mod1{
+      grid-template-areas:
+      'contenedorTM1'
+      'contenedorDescM1'
+      'contenedorImgM1'
+      ;
+      align-items: center;
+  }
+
+  .cont_banner{
+    flex-direction: column;
+  }
+
+  .banner__texto, .banner__btn{
+    width: 100%;
+    
+  }
+
+  .banner__btn{
+    justify-content: center;
+  }
+
 }
 
-.title{
-  font-family: Montserrat;
-  font-size: 2.8rem;
-  font-weight: 700;
-  margin: 0;
-}
-
-li{
-  font-family: 'Roboto';
-}
-
-p{
-  font-size: 1.6rem;
-}

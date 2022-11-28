@@ -16,7 +16,7 @@
     </div>
     <div class="item-contenido">
       <div class="parrafo">
-        <p class="p-desc">{{producto.descripcion}}</p>    
+        <p class="p-desc">{{producto.descripcion | safe}}</p>    
         <p class="p-piezas">Piezas disponlibles: {{producto.stock}}</p>
         <p class="p-precio">$ {{producto.precio}} MX C/U</p>
       </div>      

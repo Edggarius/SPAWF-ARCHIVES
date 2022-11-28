@@ -1,24 +1,53 @@
 {% load static %}
-    <div class="logo">
-        <a href="#"> <img src="{%static 'img/logo.svg'%}" class="logo--img" alt=""></a>
+<link rel="stylesheet" href={%static 'css/nav.css'%}>
+<script src={%static 'js/nav.js'%}></script>
+
+
+    <div class="container-nav">
+      <div class="logo">
+        <a href="#"> <img id="id_logo" src="{%static 'img/logo.svg'%}" class="logo--img" alt=""></a>
+      </div>
+      <div class="navegacion" id="id_nav">
+        <!-- //<div class="navegacion-nav"> -->
+          <div class="logo2">
+            <a href="#"> <img src="{%static 'img/logo.svg'%}" class="logo-desplegable" alt=""></a>
+          </div>
+          <div class="nav-content"> 
+            <a class="inicio" href={% url 'home' %} target="_self">Inicio </a>
+          </div>
+          <div class="nav-content">
+            <a class="somos" href={% url 'historia' %} target="_self">¿Quiénes somos?</a>
+          </div>
+          <div class="nav-content">
+            <a class="cursos" href={% url 'cursos' %} target="_self">Cursos</a>
+          </div>
+          <div class="nav-content">
+            <a class="materiales" href={% url 'materiales' %} target="_self">Materiales</a>
+          </div>
+          <div class="nav-content">
+            <a class="servicios" href={% url 'servicios' %} target="_self">Servicios</a>
+          </div>
+          <div class="nav-content">
+            <a class="contacto" href={% url 'contactos' %} target="_self">Contacto</a>
+          </div>
+        <!-- </div> -->
+      </div>
+
+      <div class="button" >
+        <input type="checkbox" id="btn-menu" onclick="mostraMenu()">
+        <label for="btn-menu" class="lbl-menu">
+            <span id="spn1"></span>
+            <span id="spn2"></span>
+            <span id="spn3"></span>
+        </label>
+      </div>
+
+      <!-- <button class="btn-rayas" onclick="mostraMenu()">
+          <div class="btn-linea"></div>
+          <div class="btn-linea"></div>
+          <div class="btn-linea"></div>
+        </button> -->
     </div>
-    <div class="navegacion">
-      <div class="nav-content"> 
-        <a class="inicio" href={% url 'home' %} target="_self">Inicio </a>
-      </div>
-      <div class="nav-content">
-        <a class="somos" href={% url 'historia' %} target="_self">¿Quiénes somos?</a>
-      </div>
-      <div class="nav-content">
-        <a class="cursos" href={% url 'cursos' %} target="_self">Cursos</a>
-      </div>
-      <div class="nav-content">
-        <a class="materiales" href={% url 'materiales' %} target="_self">Materiales</a>
-      </div>
-      <div class="nav-content">
-        <a class="servicios" href={% url 'servicios' %} target="_self">Servicios</a>
-      </div>
-      <div class="nav-content">
-        <a class="contacto" href={% url 'contactos' %} target="_self">Contacto</a>
-      </div>
-    </div>
+
+    
+    
