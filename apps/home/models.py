@@ -52,7 +52,6 @@ class Modulo(models.Model):
     
 class Expre(models.Model):
     nombre = models.CharField(max_length=100) 
-    nombre = models.CharField(max_length=100) 
     descripcion = RichTextField()
     costo = models.DecimalField(max_digits=10, decimal_places=2)
     inicio = models.DateField()
