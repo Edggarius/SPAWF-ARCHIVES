@@ -1,0 +1,468 @@
+
+.curso-img{
+  width: 50%;
+  height: 50%;
+  border-radius: 0.5rem;
+}
+
+.contenedor_imgMod1{
+
+  width: 50vh;
+  height: 30vh;
+  margin: 0 2rem 1.5rem 2rem;
+}
+
+ul{
+  margin-top: 1rem;
+  margin-left: 3rem;
+  font-size: 1.6rem;
+}
+
+
+li{
+  font-family:'Roboto';
+}
+
+p{
+  font-family:'Roboto';
+  font-size: 1.6rem;
+  width: 100%;
+}
+
+/* estilos de las info horario, curso */
+
+.cont_info{
+  width: 100%;
+  height: auto;
+  justify-content: center;
+  display: flex;
+  flex-flow: row wrap;
+  margin: 2rem 0 3rem 0;
+}
+
+.contenedor_inscripcion{
+ 
+  background: #fff;
+  border-radius: 10px;
+  width: 41.5rem;
+  height: auto;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+
+  -webkit-box-shadow: 9px 11px 18px -8px rgba(117,117,117,0.96);
+  -moz-box-shadow: 9px 11px 18px -8px rgba(117,117,117,0.96);
+  box-shadow: 9px 11px 18px -8px rgba(117,117,117,0.96);
+
+}
+
+.titulo_curso, .titulo_horario , .titulo_inscripcion{
+  text-align: center;
+  border-radius: 1rem;
+  /* margin: 1rem; */
+  width: 100%;
+  height: auto;
+  padding: 0.5rem;
+  background: #015366;
+  color: #fff;
+  letter-spacing: 0.2rem;
+  font-weight: lighter;
+}
+.titulo_curso, .titulo_horario , .titulo_inscripcion{
+  border-radius: 1rem 1rem 0 0;
+  font-family: roboto;
+  font-family: 2rem;
+  background: linear-gradient(180deg, rgba(1,83,102,1) 0%, rgb(5, 118, 144) 100%);
+}
+
+
+.titulo_inscripcion:nth-child(3){
+  border-radius:0;
+
+}
+
+.titulo_inscripcion:nth-child(5){
+  border-radius: 0 0 1rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 0;
+
+}
+.titulo_curso:nth-child(3){
+  border-radius: 0 0 1rem 1rem;
+}
+
+.desc_mod1{
+  width: 100%;
+}
+
+.inf_inicio p{
+  text-align: center;
+  font-size: 2rem;
+  margin: 1.5rem 0 1.5rem 0;
+}
+
+.inf_horario p{
+  text-align: center;
+  font-size: 2rem;
+  margin: 1.5rem 0 3rem 0;
+}
+
+.inf_inscripcion p{
+  text-align: center;
+  font-size: 2rem;
+}
+
+.pago_regular{
+    margin: 1.5rem 0 1.5rem 0;
+}
+
+.pago_regular2{
+    margin: 2rem 0 2rem 0;
+}
+
+.desc_pronto{
+  margin: 0 0 2rem 0;
+
+}
+
+.horario2{
+  padding-top: 3.5rem;
+}
+
+
+
+*/.contenedor_banner{
+  margin: 2rem;
+  width: 80rem;
+  display: flex;
+}
+
+.banner{
+  font-size: 1.8rem;
+  padding: 0px;
+    margin: 0px;
+}
+
+.banner__texto, .banner__btn{
+  width: 50%;
+}
+.banner__btn{
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.banner__btn img{
+  height: 25px;
+}
+
+.cont_banner{
+  margin: 1rem 0 0 0 ;
+  padding: 1rem 1rem;
+  display: flex;
+  background: #fff;
+  -webkit-box-shadow: 9px 11px 18px -8px rgba(117,117,117,0.96);
+-moz-box-shadow: 9px 11px 18px -8px rgba(117,117,117,0.96);
+box-shadow: 9px 11px 18px -8px rgba(117,117,117,0.96);
+border-radius: 1rem;
+}
+.banner__texto{
+  width: 100%;
+  padding: 0;
+}
+.cont__btn{
+  display: flex;
+  column-gap: 1rem;
+  align-items: center;
+  font-size: 2.5rem; 
+}
+
+/*Formulario estilos*/
+.btn, .modal-body, .modal-title, .form-control{
+  font-size: initial;
+}
+.modal-title{
+  font-size: 2.2rem;
+  
+}
+.close, span{
+  font-size: initial;
+  border: none;
+}
+
+.form-group{
+  margin-top: 1rem;
+}
+.btn .btn-primary{
+  background-color: #FFA500;
+  
+  padding: 0.3rem 1rem;
+}
+.btn-primary {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #FFA500;
+  --bs-btn-border-color: #ffb325;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #ffb325;
+  --bs-btn-hover-border-color: #ffb325;
+  --bs-btn-focus-shadow-rgb: 49,132,253;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #FFA500;
+  --bs-btn-active-border-color: #FFA500;
+  --bs-btn-active-shadow: inset 0 3px 5pxrgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: #FFA500;
+  --bs-btn-disabled-border-color: #FFA500;
+}
+
+.title_mod1{
+  width: 100%;
+  color: #fff;
+}
+
+.contenedor-titulomd1{
+  width: 100%;
+  height: auto;
+  padding: .5rem;
+  background-color: #015366;
+  border-radius: 1rem 1rem 0 0;
+    background: linear-gradient(180deg, rgba(1,83,102,1) 0%, rgb(5, 118, 144) 100%);
+}
+
+.contenedor-infCurso{
+  background: #fff;
+  border-radius: 10px;
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-areas:
+      'contenedorTM1 contenedorTM1 contenedorTM1 contenedorTM1'
+      'contenedorDescM1 contenedorDescM1 contenedorDescM1 contenedorImgM1'
+      ;
+  gap: 1rem;
+  align-items: flex-start;
+    -webkit-box-shadow: 9px 11px 18px -8px rgba(117,117,117,0.96);
+  -moz-box-shadow: 9px 11px 18px -8px rgba(117,117,117,0.96);
+  box-shadow: 9px 11px 18px -8px rgba(117,117,117,0.96);
+}
+
+.contenedor_tMod1{
+  width: 100%;
+  grid-area: contenedorTM1;
+  text-align: center;
+}
+.contenedor_descMod1{
+  grid-area: contenedorDescM1;
+  height: auto;
+  width: 100%;
+  text-align: justify;
+  padding: 1rem;
+}
+
+.contenedor_imgMod1{
+  height: auto;
+  grid-area: contenedorImgM1;
+  text-align: center;
+}
+
+.area-img{
+  width: 80%;
+  height: 70%;
+    object-fit: cover;
+}
+
+.contenedor_inscripcion{
+  grid-area: contPrecio;
+}
+.contenedor-infCurso{
+  grid-area: contenedorIfC;
+}
+.contenedor_inscripcion{
+  grid-area: contenedorIns;
+}
+
+
+.cont_mod1{
+	-webkit-animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  width: 100%;
+  display: grid;
+  grid-template-areas:
+      'contenedorIfC contenedorIfC contenedorIfC contenedorIns'
+      ;
+  gap: 1rem;
+}
+
+.curso-img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius:0.5rem;
+}
+
+@-webkit-keyframes slide-in-left {
+  0% {
+    -webkit-transform: translateX(-1000px);
+            transform: translateX(-1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-left {
+  0% {
+    -webkit-transform: translateX(-1000px);
+            transform: translateX(-1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+ @-webkit-keyframes scale-in-ver-top {
+  0% {
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+    -webkit-transform-origin: 100% 0%;
+            transform-origin: 100% 0%;
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+    -webkit-transform-origin: 100% 0%;
+            transform-origin: 100% 0%;
+    opacity: 1;
+  }
+}
+@keyframes scale-in-ver-top {
+  0% {
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+    -webkit-transform-origin: 100% 0%;
+            transform-origin: 100% 0%;
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+    -webkit-transform-origin: 100% 0%;
+            transform-origin: 100% 0%;
+    opacity: 1;
+  }
+}
+
+/* estilo de boton */
+.btn-interesa {
+ color: #090909;
+ padding: 0.7em 1.7em;
+ font-size: 18px;
+ border-radius: 0.5em;
+ background: #e8e8e8;
+ border: 1px solid #e8e8e8;
+ transition: all .3s;
+ box-shadow: 6px 6px 12px #c5c5c5,
+             -6px -6px 12px #ffffff;
+}
+
+.btn-interesa:active {
+ color: #666;
+ box-shadow: inset 4px 4px 12px #c5c5c5,
+             inset -4px -4px 12px #ffffff;
+}
+
+
+ @-webkit-keyframes scale-up-ver-center {
+  0% {
+    -webkit-transform: scaleY(0.4);
+            transform: scaleY(0.4);
+  }
+  100% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+  }
+}
+@keyframes scale-up-ver-center {
+  0% {
+    -webkit-transform: scaleY(0.4);
+            transform: scaleY(0.4);
+  }
+  100% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+  }
+}
+
+@media (max-width: 915px){
+
+  .contenedor_tMod1{
+    width: 100%;
+    text-align: center;
+  }
+
+  .desc_mod1{
+    width: 100%;
+  }
+
+  .curso-img{
+    width:80%;
+    height: 80%;
+    border-radius: 0.5rem;
+  }
+
+  .contenedor_imgMod1{
+    width: 90%;
+    text-align: center;
+  }
+  
+  .cont_mod1{
+      grid-template-areas:
+      'contenedorIfC'
+      'contenedorIns'
+      ;
+      align-items: center;
+      width: 100%;
+  }
+
+  .contenedor-infCurso{
+    grid-template-areas:
+      'contenedorTM1'
+      'contenedorDescM1'
+      'contenedorImgM1'
+      ;
+  }
+
+  .contenedor_inscripcion{
+    width: 100%;
+  }
+
+  .cont_banner{
+    margin-top: 1rem;
+    flex-direction: column;
+  }
+
+  .banner__texto, .banner__btn{
+    width: 100%;
+    
+  }
+
+  .banner__btn{
+    justify-content: center;
+  }
+
+  .area-img{
+    width: 100%;
+    height: 100%;
+      object-fit: cover;
+  }
+
+}
+

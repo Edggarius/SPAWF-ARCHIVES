@@ -12,6 +12,9 @@ def home(request):
 def historia(request):
     return render(request, 'home/historia.html',{})
 
+def cursosEx(request):
+    return render(request, 'home/cursosEX.html',{})
+
 def contactos(request):
     return render(request, 'home/contactos.html',{})
 
