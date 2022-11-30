@@ -63,3 +63,14 @@ class Expres(models.Model):
 
     def __str__(self):
        return self.nombre
+
+class Colegiatura(models.Model):
+    nombre = models.CharField(max_length=100)
+    semanal = models.DateField()
+    sabatino = models.DateField()
+    inscripcion = models.PositiveIntegerField(null=False)
+    colegiatura = models.PositiveIntegerField(null=False)
+    pronto = models.PositiveIntegerField(null=False)
+    def __str__(self):  
+        return self.nombre
+    
