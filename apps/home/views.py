@@ -66,7 +66,7 @@ def producto(request, producto_id):
 
 def cursos(request):
     cursos = Curso.objects.all()
-    cursos_express = Expre.objects.all()
+    cursos_express = Expres.objects.all()
     context = {
         "cursos" : cursos,
         "cursos_express" : cursos_express
@@ -84,8 +84,8 @@ def curso(request, curso_id):
     return render(request, 'home/curso.html',context)
 
 def express(request, express_id):
-    expres = Expre.objects.get(id=express_id)
+    expres = Expres.objects.get(id=express_id)
     context = {
         "curso" : expres
     }
-    return render(request, 'home/express.html',context)
+    return render(request, 'home/cursosEx.html',context)

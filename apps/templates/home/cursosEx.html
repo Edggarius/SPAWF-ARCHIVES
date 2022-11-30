@@ -13,19 +13,17 @@
     <div class="contenedor_tMod1">
       <div class="contenedor-titulomd1">
         <h1 class="title_mod1">
-          Curso de reparacion de celulares
+        {{curso.nombre}}
         </h1>
       </div>
     </div>
     <div class="contenedor_descMod1">
-      <p class="desc_mod1">Conoce el funcionamiento de tu celular:
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est, numquam aliquid. Totam illum quasi atque! Consequatur facilis eligendi incidunt! Magni quisquam accusamus reiciendis cum asperiores est saepe inventore ea. Nisi?
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio, quis. Consequuntur laudantium, hic natus ut officiis laborum possimus repellendus, odio, error ipsum porro reprehenderit doloremque iure? Earum, iure. Inventore, repudiandae.
+      <p class="desc_mod1">{{curso.descripcion | safe}}
       </p>
     </div>
     <div class="contenedor_imgMod1">
       <div class="area-img">
-        <img class="curso-img" src={% static 'img/elec-1.jpg' %} alt="">
+        <img class="curso-img" src="{{curso.imagen.url}}" alt="">
       </div>
     </div>
   </div>
@@ -35,19 +33,20 @@
       <h1>Inversión</h1>
     </div>
     <div class="inf_inscripcion">
-      <p class="pago_regular">$800 Mx</p>
+      <p class="pago_regular">${{curso.costo}} MX</p>
     </div>
     <div class="titulo_inscripcion">
       <h1>Dias y horario</h1>
     </div>
     <div class="inf_inscripcion">
-      <p class="pago_regular2">Sabado 22 de abril 2022</p>
-      <p class="pago_pronto">horario : de 3pm a 7pm</p>
-      <p class="desc_pronto">Aparta tu lugar con $200 Mx</p>
+      <p class="pago_regular2">Inicio: {{curso.inicio}}</p>
+      <p class="pago_pronto">Fin: {{curso.fin}} </p>
+      <p class="pago_pronto">Horario: {{curso.hora}} hrs.</p>
+      
     </div>
 
     <div class="titulo_inscripcion">
-      <h1>Curso impartido por el profesor: Timoteo Hernandez</h1>
+      <h1>Cupo Limitado</h1>
     </div>
   </div>
 </div>
@@ -72,7 +71,7 @@
     <div class="modal-dialog modal-dialog-centered" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLongTitle">Curso</h5>
+          <h5 class="modal-title" id="exampleModalLongTitle">{{curso.nombre}}</h5>
           <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>

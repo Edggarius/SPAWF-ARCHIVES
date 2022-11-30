@@ -6,7 +6,7 @@ CATEGORY_CHOICES = (('',''),('Robótica','Robótica'), ('Herramientas','Herramie
 class Producto(models.Model):
     nombre = models.CharField(max_length=100)
     descripcion = RichTextField()
-    precio = models.DecimalField(max_digits=15, decimal_places=2)
+    precio = models.PositiveIntegerField(null=False)
     stock = models.PositiveIntegerField(null=False)
     created = models.DateTimeField(auto_now_add=True)
     updated = models.DateTimeField(auto_now=True)
@@ -50,12 +50,13 @@ class Modulo(models.Model):
     def __str__(self):
         return self.modulo
     
-class Expre(models.Model):
+class Expres(models.Model):
     nombre = models.CharField(max_length=100) 
     descripcion = RichTextField()
-    costo = models.DecimalField(max_digits=10, decimal_places=2)
+    costo = models.PositiveIntegerField(null=False)
     inicio = models.DateField()
     hora = models.TimeField()
+    fin = models.DateField()
     imagen = models.FileField(null=False, upload_to=f'static/img/expres', default=None)
     created = models.DateTimeField(auto_now_add=True)
     updated = models.DateTimeField(auto_now=True)
