@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from .models import Producto, Curso, Modulo, Expre
+from .models import *
 from .models import Carrusel
 
 def home(request):
@@ -12,23 +12,14 @@ def home(request):
 def historia(request):
     return render(request, 'home/historia.html',{})
 
+def cursosEx(request):
+    return render(request, 'home/cursosEX.html',{})
+
 def contactos(request):
     return render(request, 'home/contactos.html',{})
 
 def servicios(request):
     return render(request, 'home/servicios.html',{})
-
-def curso2(request):
-    return render(request, 'home/curso2.html',{})
-
-def curso3(request):
-    return render(request, 'home/curso3.html',{})
-
-def curso4(request):
-    return render(request, 'home/curso4.html',{})
-
-def curso5(request):
-    return render(request, 'home/curso5.html',{})
 
 def contactos(request):
     return render(request, 'home/contactos.html',{})
@@ -60,7 +51,7 @@ def producto(request, producto_id):
 
 def cursos(request):
     cursos = Curso.objects.all()
-    cursos_express = Expre.objects.all()
+    cursos_express = Expres.objects.all()
     context = {
         "cursos" : cursos,
         "cursos_express" : cursos_express
@@ -75,3 +66,10 @@ def curso(request, curso_id):
         "curso": curso
     }
     return render(request, 'home/curso.html',context)
+
+def express(request, express_id):
+    expres = Expres.objects.get(id=express_id)
+    context = {
+        "curso" : expres
+    }
+    return render(request, 'home/cursosEx.html',context)

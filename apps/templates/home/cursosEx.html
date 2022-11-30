@@ -3,102 +3,55 @@
 {% block stylesheet %}
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous"1
 <link rel="stylesheet" href={%static 'css/style.css'%}>
-<link rel="stylesheet" href= {%static 'css/curso.css'%}>
+<link rel="stylesheet" href= {%static 'css/cursosEx.css'%}>
 {% endblock stylesheet %}
 
 {% block content %}
 
-<div class="cont_desc">
-  <div class="contendor_titulo">
-    <h1 class="title">
-      Electrónica analógica y digital
-    </h1>
-  </div>
-  <div class="contenedor_descripcion">
-    <p class="descripcion">
-      Este es el primer curso que debes de tomar para poder generar una base de conocimientos y aplicarlos en los modulos que te interese estudiar más adelante.
-    </p>
-  </div>
-</div>
-
 <div class="cont_mod1">
-  <div class="contenedor_tMod1">
-    <h1 class="title_mod1">
-      Electrónica analógica y digital (6 meses)
-    </h1>
-  </div>
-  <div class="contenedor_descMod1">
-    <p class="desc_mod1">En este curso aprenderás los fundamentos desde nivel básico hasta nivel avanzado en:
-
-  </p>
-    <ul>
-      <li>Uso de herramientas.</li>
-      <li>Técnicas de soldadura.</li>
-      <li>Diseño y construcción de circuitos.</li>
-      <li>Funcionamiento y prueba de componentes.</li>
-      <li>Leer e interpretar diagramas y hojas de datos.</li>
-    </ul>
-  </div>
-  <div class="contenedor_imgMod1">
-    <img class="curso-img" src={% static 'img/elec-1.jpg' %} alt="">
-  </div>
-</div>
-
-<div class="cont_info">
-  <div class="contenedor_inicio-cursos">
-    <div class="titulo_curso">
-      <h1>Inicio de cursos</h1>
+  <div class="contenedor-infCurso">
+    <div class="contenedor_tMod1">
+      <div class="contenedor-titulomd1">
+        <h1 class="title_mod1">
+        {{curso.nombre}}
+        </h1>
+      </div>
     </div>
-    <div class="inf_inicio">
-      <p>Las clases inician cada:</p>
-      <p>Febrero y Agosto</p>
-      <br>
-      <p>Semanal:</p>
-      <p>1 de Agosto del 2022</p>
-      <br>
-      <p>Sabatino:</p>
-      <p>6 de Agosto del 2022</p>
+    <div class="contenedor_descMod1">
+      <p class="desc_mod1">{{curso.descripcion | safe}}
+      </p>
     </div>
-    <div class="titulo_curso">
-      <h1>cupo limitado</h1>
-    </div>
-
-  </div>
-
-  <div class="contenedro_horario">
-    <div class="titulo_horario">
-      <h1>Horarios</h1>
-    </div>
-    <div class="inf_horario">
-      <p>Lunes y Miércoles</p>
-      <p>Matutino: 8 - 10 am</p>
-      <p>Vespertino: 7 - 9 pm</p>
-      <p class="horario2">Sabatino</p>
-      <p>9 am - 2 pm</p>
+    <div class="contenedor_imgMod1">
+      <div class="area-img">
+        <img class="curso-img" src="{{curso.imagen.url}}" alt="">
+      </div>
     </div>
   </div>
 
   <div class="contenedor_inscripcion">
     <div class="titulo_inscripcion">
-      <h1>Inscripción</h1>
+      <h1>Inversión</h1>
     </div>
     <div class="inf_inscripcion">
-      <p class="pago_regular">Regular: $500.00</p>
+      <p class="pago_regular">${{curso.costo}} MX</p>
     </div>
     <div class="titulo_inscripcion">
-      <h1>Colegiatura Mensual</h1>
+      <h1>Dias y horario</h1>
     </div>
     <div class="inf_inscripcion">
-      <p class="pago_regular2">Pago Regular: $1100.00</p>
-      <p class="pago_pronto">Pronto Pago: $990.00</p>
-      <p class="desc_pronto">(Primeros 5 días del mes)</p>
+      <p class="pago_regular2">Inicio: {{curso.inicio}}</p>
+      <p class="pago_pronto">Fin: {{curso.fin}} </p>
+      <p class="pago_pronto">Horario: {{curso.hora}} hrs.</p>
+      
     </div>
 
     <div class="titulo_inscripcion">
-      <h1>El costo de colegiatura de los cursos aplica si se toman desde el primer semestre.</h1>
+      <h1>Cupo Limitado</h1>
     </div>
   </div>
 </div>
+
+  
 
 <div class="cont_banner">
   <div class="banner__texto">
@@ -112,13 +65,13 @@
     
   </button>
 
-    <!-- Modal -->
+    <!-- Formulario -->
   <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
     
     <div class="modal-dialog modal-dialog-centered" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLongTitle">Curso</h5>
+          <h5 class="modal-title" id="exampleModalLongTitle">{{curso.nombre}}</h5>
           <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>

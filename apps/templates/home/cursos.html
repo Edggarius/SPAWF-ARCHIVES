@@ -8,20 +8,20 @@
 {% block content %}
 
 {% if cursos_express.count != 0 %}
-  <h1 class="titulo">Cursos Express</h1>
-  <div class="contenedor-cursos">
-  {% for express in cursos_express %}
-  <div class="contenedor-card-curso">
-      <img class="img-cursos" src={{express.imagen.url}} alt=""></a>
+<h1 class="titulo">Cursos Express</h1>
+<div class="contenedor-cursos">
+  {% for curso in cursos_express %}
+  <a href="{% url 'express' curso.id %}"> 
+  <div class="contenedor-card-curso">   
+      <img class="img-cursos" src={{curso.imagen.url}} alt=""></a>
       <div class="titulo_curso">
-        <h1>{{express.nombre}}</h1>
+        <h1>{{curso.nombre}}</h1>
       </div>
     </div>  
+  </a>
   {% endfor %}
 </div>
 {% endif %}
-
-
 
 
 <h1 class="titulo">Cursos Principales</h1>
