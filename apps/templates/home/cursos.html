@@ -7,43 +7,25 @@
 
 {% block content %}
 
+{% if cursos_express.count != 0 %}
+  <h1 class="titulo">Cursos Express</h1>
+  <div class="contenedor-cursos">
+  {% for express in cursos_express %}
+  <div class="contenedor-card-curso">
+      <img class="img-cursos" src={{express.imagen.url}} alt=""></a>
+      <div class="titulo_curso">
+        <h1>{{express.nombre}}</h1>
+      </div>
+    </div>  
+  {% endfor %}
+</div>
+{% endif %}
+
+
+
+
 <h1 class="titulo">Cursos Principales</h1>
-
 <div class="contenedor-cursos">
-
-  {% comment %} <div class="contenedor-card-curso">
-    <a href={% url 'curso5' %} target="_self"><img class="img-cursos" src={% static 'img/anaDigit.jpg' %} alt=""></a>
-    <div class="titulo_curso">
-      <h1>Electrónica Analógica y Digital</h1>
-    </div>
-  </div>
-
-  <div class="contenedor-card-curso">
-    <a href={% url 'curso' %} target="_self"><img class="img-cursos" src={% static 'img/pc_laptop.jpg' %} alt=""></a>
-    <div class="titulo_curso">
-      <h1>Pc y Laptop</h1>
-    </div>
-  </div>
-
-  <div class="contenedor-card-curso">
-    <a href={% url 'curso3' %} target="_self"><img class="img-cursos" src={% static 'img/audVideo.jpg' %} alt=""></a>
-    <div class="titulo_curso">
-      <h1>Audio y Video</h1>
-    </div>
-  </div>
-  <div class="contenedor-card-curso">
-    <a href={% url 'curso2' %} target="_self"><img class="img-cursos" src={% static 'img/robot.jpg' %} alt=""></a>
-    <div class="titulo_curso">
-      <h1>Robótica</h1>
-    </div>
-  </div>
-  <div class="contenedor-card-curso">
-    <a href={% url 'curso4' %} target="_self"><img class="img-cursos" src={% static 'img/automotriz.jpg' %} alt=""></a>
-    <div class="titulo_curso">
-      <h1>Automotriz</h1>
-    </div>
-  </div> {% endcomment %}
-
   {% for curso in cursos %}
   <a href="{% url 'curso' curso.id %}"> 
   <div class="contenedor-card-curso">

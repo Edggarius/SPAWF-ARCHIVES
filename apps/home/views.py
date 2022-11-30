@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from .models import Producto, Curso, Modulo
+from .models import Producto, Curso, Modulo, Expre
 from .models import Carrusel
 
 def home(request):
@@ -8,9 +8,6 @@ def home(request):
         "carrusel": carrusel
     }
     return render(request, 'home/home.html',context)
-
-
-
 
 def historia(request):
     return render(request, 'home/historia.html',{})
@@ -36,20 +33,6 @@ def curso5(request):
 def contactos(request):
     return render(request, 'home/contactos.html',{})
 
-# def index(request):
-#     if 'q' in request.GET:
-#         q = request.GET['q']
-#         data = Data.objects.filter(last_name__icontains=q)
-#         multiple_q = Q(Q(first_name__icontains=q) | Q(last_name__icontains=q))
-#         data = Data.objects.filter(multiple_q)
-#     else:
-#         data = Data.objects.all()
-#     context = {
-#         'data': data
-#     }
-#     return render(request, 'dashboard/index.html', context)
-
-
 def materiales(request):
     if 'q' in request.GET:
         q = request.GET['q']
@@ -65,7 +48,6 @@ def materiales(request):
     }
     return render(request, 'home/materiales.html',context)
 
-
 def producto(request, producto_id):
     try:
         producto = Producto.objects.get(id=producto_id)
@@ -78,15 +60,16 @@ def producto(request, producto_id):
 
 def cursos(request):
     cursos = Curso.objects.all()
+    cursos_express = Expre.objects.all()
     context = {
-        "cursos" : cursos
+        "cursos" : cursos,
+        "cursos_express" : cursos_express
     }
     return render(request, 'home/cursos.html',context)
 
 def curso(request, curso_id):
     mod = Modulo.objects.filter(curso_id=curso_id)    
-    curso = Curso.objects.get(id=curso_id)
-    
+    curso = Curso.objects.get(id=curso_id)    
     context = {
         "modulos": mod,
         "curso": curso
