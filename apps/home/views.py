@@ -9,9 +9,6 @@ def home(request):
     }
     return render(request, 'home/home.html',context)
 
-
-
-
 def historia(request):
     return render(request, 'home/historia.html',{})
 
@@ -20,18 +17,6 @@ def contactos(request):
 
 def servicios(request):
     return render(request, 'home/servicios.html',{})
-
-def curso2(request):
-    return render(request, 'home/curso2.html',{})
-
-def curso3(request):
-    return render(request, 'home/curso3.html',{})
-
-def curso4(request):
-    return render(request, 'home/curso4.html',{})
-
-def curso5(request):
-    return render(request, 'home/curso5.html',{})
 
 def contactos(request):
     return render(request, 'home/contactos.html',{})
@@ -78,8 +63,10 @@ def producto(request, producto_id):
 
 def cursos(request):
     cursos = Curso.objects.all()
+    cursos_express = Expre.objects.all()
     context = {
-        "cursos" : cursos
+        "cursos" : cursos,
+        "cursos_express" : cursos_express
     }
     return render(request, 'home/cursos.html',context)
 
