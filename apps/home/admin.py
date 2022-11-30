@@ -1,11 +1,12 @@
 from django.contrib import admin
-from .models import Producto, Carrusel, Curso, Modulo
+from .models import *
 # Register your models here.
 
 admin.site.register(Producto)
 admin.site.register(Carrusel)
 admin.site.register(Curso)
 admin.site.register(Modulo)
+admin.site.register(Expre)
 
 class Media:
     css = {

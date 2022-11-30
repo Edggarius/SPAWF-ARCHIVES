@@ -12,7 +12,7 @@ urlpatterns = [
     path('curso3/', views.curso3, name='curso3'),
     path('curso4/', views.curso4, name='curso4'),
     path('curso5/', views.curso5, name='curso5'),
-
+    path('express/<int:express_id>', views.express, name='express'),
     path('materiales/', views.materiales, name='materiales'),
     path('producto/<int:producto_id>', views.producto, name='producto'),
     path('curso/<int:curso_id>', views.curso, name='curso'),
