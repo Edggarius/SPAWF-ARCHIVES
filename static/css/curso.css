@@ -414,6 +414,7 @@ contenedor_imgMod1{
 
   .contenedor_tMod1{
     width: 100%;
+    display: flex;
     text-align: center;
   }
 
@@ -429,6 +430,9 @@ contenedor_imgMod1{
 
   .contenedor_imgMod1{
     height: 100%;
+    margin: 0;
+    width: 100%;
+    padding: 1rem;  
   }
   
   .cont_mod1{

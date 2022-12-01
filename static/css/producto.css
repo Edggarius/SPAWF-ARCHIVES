@@ -18,7 +18,7 @@
   display: grid;
 
     grid-template-areas:
-    '. titulo titulo titulo titulo titulo'
+    'img titulo titulo titulo titulo titulo'
     'img contenido contenido contenido contenido contenido';
   
   padding: 0.5rem;
@@ -110,6 +110,8 @@ display: flex;
     height: 100%;
     object-fit: scale-down;
   }
-
+  .item-img{
+    margin: 0;
+  }
 
 }
