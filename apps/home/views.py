@@ -60,10 +60,12 @@ def cursos(request):
 
 def curso(request, curso_id):
     mod = Modulo.objects.filter(curso_id=curso_id)    
-    curso = Curso.objects.get(id=curso_id)    
+    curso = Curso.objects.get(id=curso_id)   
+    colegiatura = Colegiatura.objects.get(id=1) 
     context = {
         "modulos": mod,
-        "curso": curso
+        "curso": curso,
+        "colegiatura": colegiatura
     }
     return render(request, 'home/curso.html',context)
 

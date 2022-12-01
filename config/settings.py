@@ -167,7 +167,8 @@ JAZZMIN_SETTINGS = {
      "login_logo": "\img\logo_img.png",
      "site_title": "Página de administración",
      "welcome_sign": "Bienvenido al panel de administrador",
-     
+      
+       "site_brand": "Administración",
      "usermenu_links": [
         {"name": "Support", "url": "https://chat.whatsapp.com/K6w45yEl2Ru0lqLrtuPAxB", "new_window": True},
         {"model": "auth.user"}

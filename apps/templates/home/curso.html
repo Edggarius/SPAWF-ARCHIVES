@@ -30,13 +30,6 @@
     </div>
     <div class="contenedor_descMod1">
       <p class="desc_mod1">{{mod.descripcion | safe}}</p>
-      {% comment %} <ul> LISTA CARACTERISTICAS
-        <li>Controlar luces.</li>
-        <li>Mostrar imágenes y mensajes en pantallas.</li>
-        <li>Leer sensores.</li>
-        <li>Controlar motores, relevadores y electroválvulas.</li>
-        <li>Comunicación (Bluetooth, WIFI, GPS).</li>
-      </ul> {% endcomment %}
     </div>
     <div class="contenedor_imgMod1">
       <img class="curso-img" src={{mod.imagen.url}} alt="">
@@ -54,10 +47,10 @@
       <p>Febrero y Agosto</p>
       <br>
       <p>Semanal:</p>
-      <p>1 de Agosto del 2022</p>
+      <p>{{colegiatura.semanal}}</p>
       <br>
       <p>Sabatino:</p>
-      <p>6 de Agosto del 2022</p>
+      <p>{{colegiatura.sabatino}}</p>
     </div>
     <div class="titulo_curso">
       <h1>Cupo limitado</h1>
@@ -71,10 +64,10 @@
     </div>
     <div class="inf_horario">
       <p>Lunes y Miércoles</p>
-      <p>Matutino: 8 - 10 am</p>
-      <p>Vespertino: 7 - 9 pm</p>
+      <p>Matutino: 8:00 - 10:00 am</p>
+      <p>Vespertino: 7:00 - 9:00 pm</p>
       <p class="horario2">Sabatino</p>
-      <p>9 am - 2 pm</p>
+      <p>9:00 am - 2:00 pm</p>
     </div>
   </div>
 
@@ -83,14 +76,14 @@
       <h1>Inscripción</h1>
     </div>
     <div class="inf_inscripcion">
-      <p class="pago_regular">Regular: $500.00</p>
+      <p class="pago_regular">Regular: ${{colegiatura.inscripcion}} MX.</p>
     </div>
     <div class="titulo_inscripcion">
       <h1>Colegiatura Mensual</h1>
     </div>
     <div class="inf_inscripcion">
-      <p class="pago_regular2">Pago Regular: $1100.00</p>
-      <p class="pago_pronto">Pronto Pago: $990.00</p>
+      <p class="pago_regular2">Pago Regular: ${{colegiatura.colegiatura}} MX.</p>
+      <p class="pago_pronto">Pronto Pago: ${{colegiatura.pronto}} MX.</p>
       <p class="desc_pronto">(Primeros 5 días del mes)</p>
     </div>
 
@@ -103,7 +96,7 @@
 <div class="cont_banner">
   <div class="banner__texto">
     <p class="banner">
-      Para más información puedes contactarnos en nuestras redes sociales o    presionar “Me interesa” para mandarnos un correo electrónico.
+      Para más información puedes contactarnos en nuestras redes sociales o presionar “Me interesa” para mandarnos un correo electrónico.
     </p>
   </div >
   <div class="banner__btn">                
