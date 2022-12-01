@@ -186,5 +186,7 @@ button:hover .icon {
   .item-img{
     margin: 0;
   }
-
+  .item-boton{
+    display: none;
+  }
 }
