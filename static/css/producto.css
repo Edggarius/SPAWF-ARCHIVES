@@ -102,7 +102,7 @@ button {
  height: 3em;
  padding: 0 3em;
  border: none;
- background-color: rgb(9, 40, 140);
+ background-color: rgb(3 53 64);
  color: #fff;
  text-transform: uppercase;
  overflow: hidden;
@@ -119,7 +119,7 @@ button::before {
  height: 0px;
  width: 100%;
  background: rgb(27, 83, 196);
- background: linear-gradient(90deg, rgb(27, 69, 196) 20%, rgb(21, 7, 124) 100%);
+ background: linear-gradient(90deg, #033540ed 20%, rgb(3 75 90) 100%);
  transition: 0.2s;
 }
 
