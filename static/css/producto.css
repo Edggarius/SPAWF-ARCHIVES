@@ -1,6 +1,7 @@
 .item-title { grid-area: titulo;}
 .item-img { grid-area: img;}
 .item-contenido { grid-area: contenido;}
+.item-boton{grid-area: boton;}
 
 .container-material{
   width: auto;
@@ -26,6 +27,11 @@
   height: 100%;
 }
 
+.boton-regresar{
+  display: flex;
+  flex-direction: row-reverse;
+}
+
 .item-title{
   width: 100%;
   height: 5rem;
@@ -40,13 +46,17 @@
 }
 
 .item-contenido p{
-  padding: 1rem 0;
+
+  width: 100%;
 }
 
-.item-contenido li{
-  font-size: 1.7rem;
-  margin-left: 5rem;
-  margin-top: 1rem;
+p{
+  width: 100%;
+
+}
+
+.tem-contenido{
+  width: 100%;
 }
 
 .p-piezas, .p-precio{
@@ -55,7 +65,14 @@
   font-weight: bold;
 }
 
+.parrafo{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
 .p-desc{
+  width: 100%;
   font-size: 1.7rem;
 }
 
@@ -72,11 +89,67 @@
 main{
 display: flex;
     justify-content: center;
-  }
+}
 
 .container-material{
   width: 100rem;
 }
+
+button {
+ position: relative;
+ font-size: 14px;
+ letter-spacing: 3px;
+ height: 3em;
+ padding: 0 3em;
+ border: none;
+ background-color: rgb(9, 40, 140);
+ color: #fff;
+ text-transform: uppercase;
+ overflow: hidden;
+ border-radius: 5px
+}
+
+button::before {
+ content: '';
+ display: block;
+ position: absolute;
+ z-index: 0;
+ bottom: 0;
+ left: 0;
+ height: 0px;
+ width: 100%;
+ background: rgb(27, 83, 196);
+ background: linear-gradient(90deg, rgb(27, 69, 196) 20%, rgb(21, 7, 124) 100%);
+ transition: 0.2s;
+}
+
+button .label {
+ position: relative;
+}
+
+button .icon {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ height: 3em;
+ width: 3em;
+ position: absolute;
+ top: 3em;
+ right: 0;
+ opacity: 0;
+ transition: 0.4s;
+}
+
+button:hover::before {
+ height: 100%;
+}
+
+button:hover .icon {
+ top: 0;
+ opacity: 1;
+}
+
+
 
 @media (max-width: 915px){
   .container-grid{
