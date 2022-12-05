@@ -5,6 +5,7 @@
     flex-direction: row;
     justify-content: center;
     column-gap: 5rem;
+    margin-top: 10rem;
 }
 .contenedor__servicios, .contenedor__contactanos{
     margin-top: 1rem;
