@@ -456,6 +456,8 @@ contenedor_imgMod1{
   .banner__btn{
     justify-content: center;
   }
-
+.contendor_titulo{
+  width: 100%;
+}
 }
 
