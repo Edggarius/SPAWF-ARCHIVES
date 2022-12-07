@@ -115,7 +115,15 @@ footer{
 .carrusel__img{
   vertical-align: middle;
   width: 100%;
- /* height: 50rem;*/
-  height: 100%;
-  object-fit:  fill;
+  /*height: 100%;
+  object-fit:  fill;*/
+  object-fit: cover;
+    height: 75vh;
 }
+ @media (max-width: 915px){
+  .carrusel__img{
+      height: 25vh;
+      object-fit: revert;
+  }
+
+} 

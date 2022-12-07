@@ -27,16 +27,25 @@ def contactos(request):
 def materiales(request):
     if 'q' in request.GET:
         q = request.GET['q']
+        print(q)
         productos = Producto.objects.filter(nombre__icontains=q)
-    elif 'categoria' in request.GET:
+        context = {
+         "products": productos,
+         "valor": request.GET['q']
+        }
+    elif ('categoria' in request.GET) and (request.GET['categoria']!="Todos"):
         categoria = request.GET['categoria']
         print(categoria)
         productos = Producto.objects.filter(category=categoria)
+        context = {
+         "products": productos,
+         "categoria": request.GET['categoria']
+        }        
     else:
         productos = Producto.objects.all()
-    context = {
-         "products": productos
-    }
+        context = {
+            "products": productos
+        }
     return render(request, 'home/materiales.html',context)
 
 def producto(request, producto_id):
