@@ -8,7 +8,7 @@
   align-items: center;
   display: flex;
   flex-direction: column;
-  margin: 1rem 0 3rem 0;
+  margin: 10rem 0 3rem 0;
 
   -webkit-box-shadow: 9px 11px 18px -8px rgba(117,117,117,0.96);
   -moz-box-shadow: 9px 11px 18px -8px rgba(117,117,117,0.96);
@@ -456,6 +456,8 @@ contenedor_imgMod1{
   .banner__btn{
     justify-content: center;
   }
-
+.contendor_titulo{
+  width: 100%;
+}
 }
 
