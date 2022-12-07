@@ -4,6 +4,7 @@
 .item-buscador { grid-area: buscador;}
 
 .container-all{
+  margin-top: 10rem;
   display: grid;
   grid-template-areas:
       'titulo titulo titulo titulo titulo titulo'

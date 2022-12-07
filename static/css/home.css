@@ -1,3 +1,7 @@
+.contenedor-carrusel{
+  margin-top: 10rem;
+}
+
 .contenedor__estudiar{
    display: flex;
    flex-direction: row;
