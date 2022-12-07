@@ -285,6 +285,7 @@ border-radius: 1rem;
 
 
 .cont_mod1{
+
 	-webkit-animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 	        animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
   width: 100%;
@@ -430,7 +431,7 @@ border-radius: 1rem;
       ;
       align-items: center;
       width: 100%;
-      margin-top: 10rem;
+
   }
 
   .contenedor-infCurso{

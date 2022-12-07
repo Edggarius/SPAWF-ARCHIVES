@@ -28,7 +28,7 @@ p{
 }
 
 main{
-  margin: 15px;
+  margin: 10rem 15px 15px 15px;
 }
 li, p, .titulo{
   color: black;

@@ -5,7 +5,6 @@
     flex-direction: row;
     justify-content: center;
     column-gap: 5rem;
-    margin-top: 10rem;
 }
 .contenedor__servicios, .contenedor__contactanos{
     -webkit-box-shadow: 11px 12px 19px -9px rgba(138,138,138,1);
