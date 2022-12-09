@@ -50,40 +50,42 @@
   <!-- Modal -->
   <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
     
-    <div class="modal-dialog modal-dialog-centered" role="document">
+  <div class="modal-dialog modal-dialog-centered" role="document">
       <div class="modal-content">
         <div class="modal-header">
           <h5 class="modal-title" id="exampleModalLongTitle">Contacto</h5>
           <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
-        </div>
+        </div>  
         <div class="modal-body">
-            <form class="needs-validation" novalidate>
+          <form class="needs-validation" method="post" novalidate>  
+          {% csrf_token %}<!--Toque csrf para activar la seguridad en los formularios-->
                 <div class="form-group">
                   <label for="exampleFormControlInput1">Nombre</label>
-                  <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Nombre" required>
+                  {{miFormulario.nombre}}   
                   <div class="invalid-feedback">Ingrese su nombre</div>
                 </div>
                 <div class="form-group">
                   <label for="exampleFormControlInput1">Correo electrónico</label>
-                  <input type="email" class="form-control" id="exampleFormControlInput1" pattern="^[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{2,5}$" placeholder="name@example.com" required>
+                  {{miFormulario.email}}   
                   <div class="invalid-feedback">Correo electrónico invalido</div>
                 </div>
                 <div class="form-group">
                   <label for="exampleFormControlInput1">CURP</label>
-                  <input type="text" class="form-control" id="exampleFormControlInput1" pattern="^([A-Z][AEIOUX][A-Z]{2}\d{2}(?:0[1-9]|1[0-2])(?:0[1-9]|[12]\d|3[01])[HM](?:AS|B[CS]|C[CLMSH]|D[FG]|G[TR]|HG|JC|M[CNS]|N[ETL]|OC|PL|Q[TR]|S[PLR]|T[CSL]|VZ|YN|ZS)[B-DF-HJ-NP-TV-Z]{3}[A-Z\d])(\d)$" required>
+                  {{miFormulario.curp}}   
                   <div class="invalid-feedback">Ingrese su CURP</div>
                 </div>
                 <div class="form-group">
                   <label for="exampleFormControlTextarea1">Mensaje</label>
-                  <textarea class="form-control" placeholder="Escribe tu mensaje..." id="exampleFormControlTextarea1" rows="3" required></textarea>
+                  {% comment %} <textarea class="form-control" placeholder="Escribe tu mensaje..." id="exampleFormControlTextarea1" rows="3" required></textarea> {% endcomment %}                  
+                  {{miFormulario.contenido}}    
                 </div>
-             
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
           <button type="submit" class="btn btn-primary">Enviar</button>
+
         </form>
         </div>
       </div>

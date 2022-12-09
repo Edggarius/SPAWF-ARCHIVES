@@ -294,6 +294,7 @@ border-radius: 1rem;
       'contenedorIfC contenedorIfC contenedorIfC contenedorIns'
       ;
   gap: 1rem;
+  margin-top: 1vh;
 }
 
 .curso-img{

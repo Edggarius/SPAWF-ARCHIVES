@@ -56,7 +56,7 @@
 <div class="cont_banner">
   <div class="banner__texto">
     <p class="banner">
-      Para más información puedes contactarnos en nuestras redes sociales o    presionar “Me interesa” para mandarnos un correo electrónico.
+      Para más información puedes contactarnos en nuestras redes sociales o presionar “Me interesa” para mandarnos un correo electrónico.
     </p>
   </div >
   <div class="banner__btn">                
@@ -77,36 +77,33 @@
           </button>
         </div>
         <div class="modal-body">
-            <form class="needs-validation" novalidate>
+          <form class="needs-validation" method="post" novalidate>  
+          {% csrf_token %}<!--Toque csrf para activar la seguridad en los formularios-->
+          <input type="hidden" name="curso" value="{{curso.nombre}}">
                 <div class="form-group">
                   <label for="exampleFormControlInput1">Nombre</label>
-                  <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Nombre" required>
+                  {{miFormulario.nombre}}   
                   <div class="invalid-feedback">Ingrese su nombre</div>
                 </div>
                 <div class="form-group">
                   <label for="exampleFormControlInput1">Correo electrónico</label>
-                  <input type="email" class="form-control" id="exampleFormControlInput1" pattern="^[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{2,5}$" placeholder="name@example.com" required>
-                  <div class="invalid-feedback">Example invalid custom select feedback</div>
-                </div>
-                <div class="form-group">
-                  <label for="exampleFormControlInput1">Número de teléfono</label>
-                  <input type="tel" class="form-control" id="exampleFormControlInput1" pattern="^\d{10}$"  placeholder="ej. 0123456789" required>
-                  <div class="invalid-feedback">Example invalid custom select feedback</div>
+                  {{miFormulario.email}}   
+                  <div class="invalid-feedback">Correo electrónico invalido</div>
                 </div>
                 <div class="form-group">
                   <label for="exampleFormControlInput1">CURP</label>
-                  <input type="text" class="form-control" id="exampleFormControlInput1" pattern="^([A-Z][AEIOUX][A-Z]{2}\d{2}(?:0[1-9]|1[0-2])(?:0[1-9]|[12]\d|3[01])[HM](?:AS|B[CS]|C[CLMSH]|D[FG]|G[TR]|HG|JC|M[CNS]|N[ETL]|OC|PL|Q[TR]|S[PLR]|T[CSL]|VZ|YN|ZS)[B-DF-HJ-NP-TV-Z]{3}[A-Z\d])(\d)$" required>
+                  {{miFormulario.curp}}   
                   <div class="invalid-feedback">Ingrese su CURP</div>
                 </div>
                 <div class="form-group">
                   <label for="exampleFormControlTextarea1">Mensaje</label>
-                  <textarea class="form-control" placeholder="Escribe tu mensaje..." id="exampleFormControlTextarea1" rows="3" required></textarea>
+                  {% comment %} <textarea class="form-control" placeholder="Escribe tu mensaje..." id="exampleFormControlTextarea1" rows="3" required></textarea> {% endcomment %}                  
+                  {{miFormulario.contenido}}    
                 </div>
-            
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-          <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+          <button type="submit" class="btn btn-primary">Enviar</button>
         </form>
         </div>
       </div>
