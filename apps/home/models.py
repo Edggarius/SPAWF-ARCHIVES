@@ -74,3 +74,9 @@ class Colegiatura(models.Model):
     def __str__(self):  
         return self.nombre
     
+class Prueba(models.Model):
+    nombre = models.CharField(max_length=100)
+    imagen = models.ImageField(null=True, upload_to=f'static/img/prueba', default=None)
+
+    def __str__(self):  
+        return self.nombre

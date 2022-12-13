@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from .models import *
 from .models import Carrusel
-from .forms import FormularioContacto
+from .forms import FormularioContacto, FormularioPrueba
 from django.shortcuts import render, redirect
 from django.core.mail import EmailMessage
 from django.http import HttpResponse
@@ -136,3 +136,25 @@ def express(request, express_id):
         'miFormulario':formulario_contacto
     }
     return render(request, 'home/cursosEx.html',context)
+
+def prueba(request):
+    formulario = FormularioPrueba()
+    if request.method=="POST":
+        print(request.POST)
+        formulario=FormularioPrueba(request.POST, request.FILES)
+        if formulario.is_valid():
+            nombre = formulario.cleaned_data.get("nombre")
+            imagen = formulario.cleaned_data.get("img")
+            obj = Prueba.objects.create(
+                            nombre = nombre,
+                            imagen = imagen
+                            )
+            obj.save()
+            print(obj)
+        else:
+            print("Error")
+    context = {
+        "formulario": formulario
+    }
+    return render(request, 'home/prueba.html',context)
+

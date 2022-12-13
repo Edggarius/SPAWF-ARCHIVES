@@ -1,4 +1,7 @@
 from django import forms
+from PIL import Image
+from django.core.files.uploadedfile import SimpleUploadedFile
+from .models import Prueba
 
 class FormularioContacto(forms.Form):
     nombre=forms.CharField(label='Nombre', required=True, max_length=20, widget=forms.TextInput(
@@ -24,11 +27,15 @@ class FormularioContacto(forms.Form):
             'pattern': "^([A-Z][AEIOUX][A-Z]{2}\d{2}(?:0[1-9]|1[0-2])(?:0[1-9]|[12]\d|3[01])[HM](?:AS|B[CS]|C[CLMSH]|D[FG]|G[TR]|HG|JC|M[CNS]|N[ETL]|OC|PL|Q[TR]|S[PLR]|T[CSL]|VZ|YN|ZS)[B-DF-HJ-NP-TV-Z]{3}[A-Z\d])(\d)$"          
         }
     ))
-    contenido=forms.CharField(label='Contenido', max_length=400, widget=forms.Textarea(
+    contenido=forms.CharField(label='Contenido', required=False, max_length=400, widget=forms.Textarea(
         attrs={
-            'class': 'form-control',
             'placeholder': 'Escribe tu mensaje...',
-            'id': 'exampleFormControlTextarea1',
             'rows': '3'
         }
     ))
+    img = forms.ImageField(required=False)
+
+class FormularioPrueba(forms.Form):
+    img = forms.ImageField()
+    nombre = forms.CharField()
+        
