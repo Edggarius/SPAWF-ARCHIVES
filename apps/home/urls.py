@@ -12,6 +12,10 @@ urlpatterns = [
     path('cursos/', views.cursos, name='cursos'),
     path('express/<int:express_id>', views.express, name='express'),
     path('materiales/', views.materiales, name='materiales'),
+
+    path('editar/<int:prueba_id>', views.editar, name='editar'),
+
+
     path('producto/<int:producto_id>', views.producto, name='producto'),
     path('curso/<int:curso_id>', views.curso, name='curso'),
 
@@ -22,5 +26,7 @@ urlpatterns = [
     path('reset_password_sent/', auth_views.PasswordResetDoneView.as_view(), name="password_reset_done"),
 
     path('reset_password_complete/', auth_views.PasswordResetCompleteView.as_view(), name="password_reset_complete"),
+
+
     
 ]

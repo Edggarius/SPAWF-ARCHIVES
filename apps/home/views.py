@@ -158,3 +158,23 @@ def prueba(request):
     }
     return render(request, 'home/prueba.html',context)
 
+def editar(request, prueba_id):
+    prueba = Prueba.objects.get(id=prueba_id)
+    formulario = FormularioPrueba(initial={'nombre':prueba.nombre, 'img':prueba.imagen})
+
+    if request.method=="POST":
+        print(request.POST)
+        formulario=FormularioPrueba(request.POST, request.FILES)
+        if formulario.is_valid():
+            prueba.nombre = formulario.cleaned_data["nombre"]          
+            prueba.imagen = formulario.cleaned_data["img"]          
+            prueba.save()
+            print(prueba)
+        else:
+            print("Error")    
+
+    context={
+        "formulario":formulario,
+    }
+    return render(request, 'home/editar.html',context)
+
